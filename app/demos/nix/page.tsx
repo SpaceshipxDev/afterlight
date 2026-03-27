@@ -36,8 +36,16 @@ const demoData = {
   ],
 };
 
-const SectionHeader = ({ title }: { title: string }) => (
-  <h2 className="mb-6 text-[11px] font-semibold uppercase tracking-[0.2em] text-black">
+const SectionHeader = ({
+  title,
+  className = "",
+}: {
+  title: string;
+  className?: string;
+}) => (
+  <h2
+    className={`mb-6 text-[11px] font-semibold uppercase tracking-[0.2em] text-black ${className}`}
+  >
     {title}
   </h2>
 );
@@ -113,15 +121,11 @@ const MetadataLabel = ({
 
 const PipelineDivider = () => (
   <>
-    {/* desktop */}
-    <div className="hidden lg:flex h-full flex-col items-center justify-center gap-3 pt-8">
-      <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
-        Generated
-      </span>
-      <div className="flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white">
+    <div className="hidden lg:flex h-full items-center justify-center px-2 pt-8">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-neutral-200 bg-white">
         <svg
-          width="30"
-          height="30"
+          width="34"
+          height="34"
           viewBox="0 0 24 24"
           fill="none"
           className="text-neutral-700 stroke-current stroke-[1.9]"
@@ -135,15 +139,11 @@ const PipelineDivider = () => (
       </div>
     </div>
 
-    {/* mobile */}
-    <div className="flex lg:hidden flex-col items-center py-6">
-      <span className="mb-3 text-[10px] font-semibold uppercase tracking-[0.18em] text-neutral-500">
-        Generated results
-      </span>
-      <div className="flex h-14 w-14 items-center justify-center rounded-full border border-neutral-200 bg-white">
+    <div className="flex lg:hidden justify-center py-10">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-neutral-200 bg-white">
         <svg
-          width="30"
-          height="30"
+          width="34"
+          height="34"
           viewBox="0 0 24 24"
           fill="none"
           className="text-neutral-700 stroke-current stroke-[1.9]"
@@ -234,7 +234,10 @@ export default function DemoPage() {
               <PipelineDivider />
 
               <div className="flex w-full flex-col">
-                <SectionHeader title="Afterlight" />
+                <SectionHeader
+                  title="Generated results"
+                  className="text-[13px] md:text-[14px]"
+                />
 
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-6">
                   {sku.outputs.map((src, idx) => (
