@@ -34,8 +34,16 @@ const demoData = {
   ],
 };
 
-const SectionHeader = ({ title }: { title: string }) => (
-  <h2 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-black mb-6">
+const SectionHeader = ({
+  title,
+  className = '',
+}: {
+  title: string;
+  className?: string;
+}) => (
+  <h2
+    className={`mb-6 text-[11px] font-semibold uppercase tracking-[0.2em] text-black ${className}`}
+  >
     {title}
   </h2>
 );
@@ -75,8 +83,8 @@ const MetadataLabel = ({
   value: string;
   isLink?: boolean;
 }) => (
-  <div className="text-[13px] leading-relaxed flex items-start sm:items-center gap-3">
-    <span className="font-medium text-neutral-400 uppercase tracking-wider text-[10px] w-8 mt-1 sm:mt-0 shrink-0">
+  <div className="flex items-start gap-3 text-[13px] leading-relaxed sm:items-center">
+    <span className="mt-1 w-8 shrink-0 text-[10px] font-medium uppercase tracking-wider text-neutral-400 sm:mt-0">
       {label}
     </span>
     {isLink ? (
@@ -84,7 +92,7 @@ const MetadataLabel = ({
         href={value}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black hover:text-neutral-500 transition-colors inline-flex items-center gap-1 break-all sm:break-normal"
+        className="inline-flex items-center gap-1 break-all text-black transition-colors hover:text-neutral-500 sm:break-normal"
       >
         Source Link
         <svg
@@ -109,23 +117,63 @@ const MetadataLabel = ({
   </div>
 );
 
+const PipelineDivider = () => (
+  <>
+    <div className="hidden lg:flex h-full items-center justify-center px-2 pt-8">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-neutral-200 bg-white">
+        <svg
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="text-neutral-700 stroke-current stroke-[1.9]"
+        >
+          <path
+            d="M4 12H20M20 12L13 5M20 12L13 19"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <div className="flex lg:hidden justify-center py-10">
+      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-neutral-200 bg-white">
+        <svg
+          width="34"
+          height="34"
+          viewBox="0 0 24 24"
+          fill="none"
+          className="text-neutral-700 stroke-current stroke-[1.9]"
+        >
+          <path
+            d="M12 4V20M12 20L5 13M12 20L19 13"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+  </>
+);
+
 export default function DemoPage() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900 selection:bg-neutral-100 font-sans">
+    <main className="min-h-screen bg-white font-sans text-neutral-900 selection:bg-neutral-100">
       <header className="border-b border-neutral-100">
-        <div className="max-w-[1600px] mx-auto px-6 py-5 md:py-6">
-          <h1 className="text-base md:text-lg font-bold tracking-widest text-black uppercase">
+        <div className="mx-auto max-w-[1600px] px-6 py-5 md:py-6">
+          <h1 className="text-base font-bold uppercase tracking-widest text-black md:text-lg">
             Afterlight
           </h1>
         </div>
       </header>
 
-      <div className="max-w-[1600px] mx-auto px-6 py-12 md:py-32">
+      <div className="mx-auto max-w-[1600px] px-6 py-12 md:py-32">
         <div className="mb-20 md:mb-32">
-          <p className="text-[11px] md:text-[12px] font-medium uppercase tracking-[0.15em] text-neutral-500 mb-3 md:mb-4">
+          <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-500 md:mb-4 md:text-[12px]">
             Demo // {demoData.agencyName}
           </p>
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tighter text-black uppercase">
+          <h2 className="text-4xl font-bold uppercase tracking-tighter text-black sm:text-5xl md:text-7xl">
             {demoData.clientName}
           </h2>
         </div>
@@ -133,19 +181,27 @@ export default function DemoPage() {
         {demoData.skus.map((sku, index) => (
           <div
             key={sku.id}
-            className={`${index !== 0 ? 'mt-24 pt-16 md:mt-40 md:pt-20 border-t border-neutral-100' : ''}`}
+            className={`${
+              index !== 0
+                ? 'mt-24 border-t border-neutral-100 pt-16 md:mt-40 md:pt-20'
+                : ''
+            }`}
           >
-            <div className="mb-10 md:mb-16 flex items-baseline gap-3 md:gap-4">
-              <span className="text-xs md:text-sm font-mono text-neutral-400">0{index + 1}</span>
-              <h3 className="text-xl md:text-2xl font-medium tracking-tight">{sku.displayName}</h3>
+            <div className="mb-10 flex items-baseline gap-3 md:mb-16 md:gap-4">
+              <span className="font-mono text-xs text-neutral-400 md:text-sm">
+                0{index + 1}
+              </span>
+              <h3 className="text-xl font-medium tracking-tight md:text-2xl">
+                {sku.displayName}
+              </h3>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,4fr)_auto_minmax(0,7fr)] gap-0 lg:gap-16 items-start">
-              <div className="flex flex-col w-full">
+            <div className="grid grid-cols-1 items-start gap-0 lg:grid-cols-[minmax(0,4fr)_auto_minmax(0,7fr)] lg:gap-16">
+              <div className="flex w-full flex-col">
                 <SectionHeader title="Input" />
 
                 <div
-                  className={`grid gap-3 md:gap-4 mb-6 ${
+                  className={`mb-6 grid gap-3 md:gap-4 ${
                     sku.inputs.length === 1
                       ? 'grid-cols-1 w-2/3 max-w-[300px]'
                       : 'grid-cols-2'
@@ -154,7 +210,7 @@ export default function DemoPage() {
                   {sku.inputs.map((src, idx) => (
                     <div
                       key={idx}
-                      className="relative aspect-square bg-[#fafafa] rounded-md overflow-hidden border border-neutral-100"
+                      className="relative aspect-square overflow-hidden rounded-md border border-neutral-100 bg-[#fafafa]"
                     >
                       <Image
                         src={src}
@@ -169,49 +225,22 @@ export default function DemoPage() {
 
                 <div className="space-y-3 pt-2 md:pt-4">
                   <MetadataLabel label="SKU" value={sku.originalTitle} />
-                  <MetadataLabel label="URL" value={sku.originalLink} isLink={true} />
+                  <MetadataLabel label="URL" value={sku.originalLink} isLink />
                 </div>
               </div>
 
-              <div className="hidden lg:flex h-full items-center justify-center pt-8">
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="text-neutral-300 stroke-current stroke-[1.5]"
-                >
-                  <path
-                    d="M4 12H20M20 12L13 5M20 12L13 19"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+              <PipelineDivider />
 
-              <div className="flex lg:hidden justify-center py-10 opacity-60">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="text-neutral-400 stroke-current stroke-[1.5]"
-                >
-                  <path
-                    d="M12 4V20M12 20L5 13M12 20L19 13"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+              <div className="flex w-full flex-col">
+                <SectionHeader
+                  title="Generated results"
+                  className="text-[13px] md:text-[14px]"
+                />
 
-              <div className="flex flex-col w-full">
-                <SectionHeader title="Afterlight" />
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6">
                   {sku.outputs.map((src, idx) => (
                     <div key={idx} className="space-y-3">
-                      <div className="relative aspect-square bg-[#f5f5f5] rounded-md overflow-hidden">
+                      <div className="relative aspect-square overflow-hidden rounded-md bg-[#f5f5f5]">
                         <Image
                           src={src}
                           alt={`${sku.displayName} Try-on ${idx + 1}`}
@@ -233,7 +262,7 @@ export default function DemoPage() {
           </div>
         ))}
 
-        <footer className="mt-24 pt-10 md:mt-40 md:pt-12 border-t border-neutral-100 flex justify-between items-center text-[11px] md:text-[13px] font-medium text-neutral-400">
+        <footer className="mt-24 flex items-center justify-between border-t border-neutral-100 pt-10 text-[11px] font-medium text-neutral-400 md:mt-40 md:pt-12 md:text-[13px]">
           <span>&copy; {new Date().getFullYear()} Afterlight</span>
           <span>Confidential</span>
         </footer>
