@@ -93,7 +93,7 @@ const COPY: Record<
   }
 > = {
   en: {
-    headline: 'Skip your next photoshoot',
+    headline: 'Skip your next photoshoot.',
     subhead: "Generate product photos and listings in your brand's style.",
     emailPlaceholder: 'Enter your email',
     saving: 'Saving...',
