@@ -173,18 +173,18 @@ export default function DemoPage() {
             <h3 className="text-2xl font-medium tracking-tight md:text-3xl">{sku.displayName}</h3>
           </div>
 
-          <div className="grid grid-cols-1 items-start gap-0 lg:grid-cols-[minmax(0,4fr)_auto_minmax(0,8fr)] lg:gap-16">
+          <div className="grid grid-cols-1 items-start gap-0 lg:grid-cols-[minmax(0,300px)_auto_minmax(0,1fr)] lg:gap-16">
             <div className="flex w-full flex-col">
               <SectionHeader title="Before" />
 
-              <div className="mb-7 w-full max-w-[380px]">
+              <div className="mb-7 w-full max-w-[300px]">
                 <div className="relative aspect-square overflow-hidden rounded-xl border border-neutral-100 bg-[#fafafa] shadow-[0_1px_0_rgba(0,0,0,0.02)]">
                   <Image
                     src={sku.inputs[0]}
                     alt={`${sku.displayName} Input`}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 26vw"
+                    sizes="(max-width: 1024px) 100vw, 20vw"
                     priority
                   />
                 </div>
@@ -202,17 +202,17 @@ export default function DemoPage() {
             <div className="flex w-full flex-col">
               <SectionHeader title="Generated Output" />
 
-              <div className="grid grid-cols-1 gap-5 md:grid-cols-3 lg:gap-6">
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-2 2xl:grid-cols-3 lg:gap-6">
                 {sku.outputs.map((src, idx) => (
                   <div key={idx} className="space-y-3">
                     <div className="relative aspect-square overflow-hidden rounded-xl bg-[#f5f5f5] shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                      <Image
-                        src={src}
-                        alt={`${sku.displayName} Output ${idx + 1}`}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 33vw"
-                      />
+                        <Image
+                          src={src}
+                          alt={`${sku.displayName} Output ${idx + 1}`}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1536px) 42vw, 28vw"
+                        />
                     </div>
                     <p className="text-base font-medium text-black md:text-[17px]">
                       {outputLabels[idx]}
