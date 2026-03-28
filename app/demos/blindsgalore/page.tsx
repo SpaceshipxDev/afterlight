@@ -12,9 +12,9 @@ const demoData = {
         'https://www.blindsgalore.com/product/749866/blindsgalore-essential-motorized-woven-wood-shades',
       inputs: ['/blindsgalore/0749866l0%20(1).jpeg'],
       outputs: [
-        '/blindsgalore/Generated%20Image%20March%2027,%202026%20-%203_32PM.jpg',
-        '/blindsgalore/Generated%20Image%20March%2027,%202026%20-%203_29PM.jpg',
-        '/blindsgalore/Generated%20Image%20March%2027,%202026%20-%203_41PM.jpg',
+        '/blindsgalore/Generated%20Image%20March%2027,%202026%20-%203_32PM.jpeg',
+        '/blindsgalore/Generated%20Image%20March%2027,%202026%20-%203_29PM.jpeg',
+        '/blindsgalore/Generated%20Image%20March%2027,%202026%20-%203_41PM.jpeg',
       ],
     },
   ],
