@@ -21,7 +21,7 @@ const demoData = {
 };
 
 const SectionHeader = ({ title }: { title: string }) => (
-  <h2 className="mb-6 text-[13px] font-semibold uppercase tracking-[0.22em] text-black md:mb-8 md:text-[15px]">
+  <h2 className="mb-6 text-[11px] font-semibold uppercase tracking-[0.2em] text-black md:mb-8 md:text-[12px]">
     {title}
   </h2>
 );
@@ -31,7 +31,7 @@ const SourceLinkButton = ({ href }: { href: string }) => (
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center justify-center gap-1.5 rounded-md border border-neutral-200 px-4 py-3 text-[14px] font-medium text-black transition-colors hover:border-neutral-300 hover:text-neutral-500"
+    className="inline-flex items-center justify-center gap-1.5 rounded-md border border-neutral-200 px-4 py-2.5 text-[13px] font-medium text-black transition-colors hover:border-neutral-300 hover:text-neutral-500"
   >
     Source Link
     <svg
@@ -61,8 +61,8 @@ const MetadataLabel = ({
   value: string;
   isLink?: boolean;
 }) => (
-  <div className="flex items-start gap-3 text-[14px] leading-relaxed sm:items-center">
-    <span className="mt-1 w-9 shrink-0 text-[11px] font-medium uppercase tracking-wider text-neutral-400 sm:mt-0">
+  <div className="flex items-start gap-3 text-[13px] leading-relaxed sm:items-center">
+    <span className="mt-1 w-10 shrink-0 text-[10px] font-medium uppercase tracking-wider text-neutral-400 sm:mt-0">
       {label}
     </span>
     {isLink ? (
@@ -153,23 +153,23 @@ export default function DemoPage() {
 
       <div className="mx-auto max-w-[1600px] px-6 py-12 md:py-28">
         <div className="mb-20 md:mb-24">
-          <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500 md:mb-4 md:text-[13px]">
+          <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-500 md:mb-4 md:text-[12px]">
             Demo // {demoData.agencyName}
           </p>
 
-          <h2 className="text-4xl font-bold uppercase tracking-tighter text-black sm:text-5xl md:text-7xl">
+          <h2 className="max-w-4xl text-3xl font-bold uppercase tracking-tighter text-black sm:text-4xl md:text-6xl">
             {demoData.clientName}
           </h2>
 
-          <p className="mt-5 max-w-4xl text-lg leading-relaxed text-neutral-700 md:mt-6 md:text-2xl">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-neutral-700 md:mt-6 md:text-lg">
             We took one crib photo and made the other bed versions in the same room.
           </p>
         </div>
 
         <div>
           <div className="mb-10 flex items-baseline gap-3 md:mb-16 md:gap-4">
-            <span className="text-sm font-mono text-neutral-400 md:text-base">01</span>
-            <h3 className="text-2xl font-medium tracking-tight md:text-3xl">{sku.displayName}</h3>
+            <span className="text-xs font-mono text-neutral-400 md:text-sm">01</span>
+            <h3 className="text-xl font-medium tracking-tight md:text-2xl">{sku.displayName}</h3>
           </div>
 
           <div className="grid grid-cols-1 items-start gap-0 lg:grid-cols-[minmax(0,300px)_auto_minmax(0,1fr)] lg:gap-16">
@@ -213,7 +213,7 @@ export default function DemoPage() {
                         sizes="(max-width: 768px) 100vw, (max-width: 1536px) 42vw, 28vw"
                       />
                     </div>
-                    <p className="text-base font-medium text-black md:text-[17px]">{outputLabels[idx]}</p>
+                    <p className="text-sm font-medium text-black md:text-base">{outputLabels[idx]}</p>
                     {idx === sku.outputs.length - 1 ? (
                       <div className="md:hidden">
                         <SourceLinkButton href={sku.originalLink} />
@@ -230,7 +230,7 @@ export default function DemoPage() {
           </div>
         </div>
 
-        <footer className="mt-24 flex items-center justify-between border-t border-neutral-100 pt-10 text-[12px] font-medium text-neutral-400 md:mt-40 md:pt-12 md:text-[13px]">
+        <footer className="mt-24 flex items-center justify-between border-t border-neutral-100 pt-10 text-[11px] font-medium text-neutral-400 md:mt-40 md:pt-12 md:text-[13px]">
           <span>&copy; {new Date().getFullYear()} Afterlight</span>
           <span>Confidential</span>
         </footer>
