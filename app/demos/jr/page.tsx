@@ -17,7 +17,7 @@ const demoData = {
       outputs: [
         '/jr/Generated Image March 28, 2026 - 5_13PM.jpeg',
         '/jr/IMG_3747.png',
-        '/jr/montecristo-cigar-3-placeholder.jpg',
+        '/jr/IMG_3750.png',
         '/jr/Generated Image March 28, 2026 - 5_27PM (1).jpeg',
         '/jr/Generated Image March 28, 2026 - 5_30PM.jpeg',
       ],
@@ -124,17 +124,17 @@ const MetadataLabel = ({
 
 const PipelineDivider = () => (
   <>
-    <div className="hidden lg:flex h-full items-center justify-center px-4 pt-8">
-      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-neutral-200 bg-white">
+    <div className="hidden lg:flex h-full items-center justify-center px-10 xl:px-14 pt-10">
+      <div className="flex h-24 w-24 items-center justify-center rounded-full border-2 border-neutral-200 bg-white shadow-[0_0_0_8px_rgba(255,255,255,1)]">
         <svg
-          width="34"
-          height="34"
+          width="52"
+          height="52"
           viewBox="0 0 24 24"
           fill="none"
-          className="text-neutral-700 stroke-current stroke-[1.9]"
+          className="text-neutral-800 stroke-current stroke-[2.8]"
         >
           <path
-            d="M4 12H20M20 12L13 5M20 12L13 19"
+            d="M3 12H21M21 12L13 4M21 12L13 20"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -142,17 +142,17 @@ const PipelineDivider = () => (
       </div>
     </div>
 
-    <div className="flex justify-center py-10 lg:hidden">
-      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-neutral-200 bg-white">
+    <div className="flex justify-center py-12 lg:hidden">
+      <div className="flex h-24 w-24 items-center justify-center rounded-full border-2 border-neutral-200 bg-white shadow-[0_0_0_8px_rgba(255,255,255,1)]">
         <svg
-          width="34"
-          height="34"
+          width="52"
+          height="52"
           viewBox="0 0 24 24"
           fill="none"
-          className="text-neutral-700 stroke-current stroke-[1.9]"
+          className="text-neutral-800 stroke-current stroke-[2.8]"
         >
           <path
-            d="M12 4V20M12 20L5 13M12 20L19 13"
+            d="M12 3V21M12 21L4 13M12 21L20 13"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -204,7 +204,7 @@ export default function DemoPage() {
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 items-start gap-0 lg:grid-cols-[minmax(0,3fr)_auto_minmax(0,8fr)] lg:gap-10 xl:gap-16">
+            <div className="grid grid-cols-1 items-start gap-0 lg:grid-cols-[minmax(0,3fr)_auto_minmax(0,8fr)] lg:gap-14 xl:gap-20">
               <div className="flex w-full flex-col">
                 <SectionHeader title="Input" />
 
