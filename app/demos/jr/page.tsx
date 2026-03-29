@@ -13,7 +13,7 @@ const demoData = {
       skuCode: 'MXP5S',
       originalLink:
         'https://www.jrcigars.com/item/cigar-samplers/montecristo-lovers-edition-ii/MXP5S.html#start=1',
-      inputs: ['/jr/IMG_3748.jpeg'],
+      inputs: ['/jr/IMG_3773.jpeg'],
       outputs: [
         '/jr/Generated Image March 28, 2026 - 5_13PM.jpeg',
         '/jr/IMG_3747.png',
@@ -30,7 +30,7 @@ const demoData = {
       skuCode: 'BSL3SMP',
       originalLink:
         'https://www.jrcigars.com/item/boneshaker-lunatic/3-cigar-sampler/BSL3SMP.html',
-      inputs: ['/jr/IMG_3749.jpeg'],
+      inputs: ['/jr/IMG_3772.jpeg'],
       outputs: [
         '/jr/Generated Image March 28, 2026 - 5_37PM.jpeg',
         '/jr/Generated Image March 28, 2026 - 5_43PM.jpeg',
