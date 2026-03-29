@@ -23,29 +23,6 @@ const demoData = {
   heroText: 'We turned existing room photos into Behr ready campaign creative, no reshoot.',
   examples: [
     {
-      id: 'charcoal',
-      roomTitle: 'Graphic Charcoal Kitchen',
-      displayName: 'Charcoal set',
-      before: '/behr/Gemini_Generated_Image_pv3dpypv3dpypv3d.jpg',
-      after: '/behr/Gemini_Generated_Image_om6fy5om6fy5om6f.jpg',
-      paintOptions: [
-        {
-          label: 'Walls',
-          name: 'Silky White',
-          code: 'PPU7-12',
-          swatch: '#ded8cf',
-          href: 'https://www.behr.com/consumer/ColorDetailView/PPU7-12',
-        },
-        {
-          label: 'Lower cabinets',
-          name: 'Graphic Charcoal',
-          code: 'N500-6',
-          swatch: '#4a4849',
-          href: 'https://www.behr.com/consumer/ColorDetailView/N500-6',
-        },
-      ],
-    },
-    {
       id: 'sage',
       roomTitle: 'Bitter Sage Dining Nook',
       displayName: 'Sage set',
@@ -88,6 +65,29 @@ const demoData = {
           code: 'PPU7-11',
           swatch: '#ede6d9',
           href: 'https://www.behr.com/consumer/ColorDetailView/PPU7-11',
+        },
+      ],
+    },
+    {
+      id: 'charcoal',
+      roomTitle: 'Graphic Charcoal Kitchen',
+      displayName: 'Charcoal set',
+      before: '/behr/Gemini_Generated_Image_pv3dpypv3dpypv3d.jpg',
+      after: '/behr/Gemini_Generated_Image_om6fy5om6fy5om6f.jpg',
+      paintOptions: [
+        {
+          label: 'Walls',
+          name: 'Silky White',
+          code: 'PPU7-12',
+          swatch: '#ded8cf',
+          href: 'https://www.behr.com/consumer/ColorDetailView/PPU7-12',
+        },
+        {
+          label: 'Lower cabinets',
+          name: 'Graphic Charcoal',
+          code: 'N500-6',
+          swatch: '#4a4849',
+          href: 'https://www.behr.com/consumer/ColorDetailView/N500-6',
         },
       ],
     },
