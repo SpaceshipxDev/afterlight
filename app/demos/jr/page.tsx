@@ -13,13 +13,13 @@ const demoData = {
       skuCode: 'MXP5S',
       originalLink:
         'https://www.jrcigars.com/item/cigar-samplers/montecristo-lovers-edition-ii/MXP5S.html#start=1',
-      inputs: ['/jr/montecristo-group-placeholder.jpg'],
+      inputs: ['/jr/IMG_3748.jpeg'],
       outputs: [
-        '/jr/montecristo-cigar-1-placeholder.jpg',
-        '/jr/montecristo-cigar-2-placeholder.jpg',
+        '/jr/Generated Image March 28, 2026 - 5_13PM.jpeg',
+        '/jr/IMG_3747.png',
         '/jr/montecristo-cigar-3-placeholder.jpg',
-        '/jr/montecristo-cigar-4-placeholder.jpg',
-        '/jr/montecristo-cigar-5-placeholder.jpg',
+        '/jr/Generated Image March 28, 2026 - 5_27PM (1).jpeg',
+        '/jr/Generated Image March 28, 2026 - 5_30PM.jpeg',
       ],
     },
     {
@@ -29,11 +29,11 @@ const demoData = {
       skuCode: 'BSL3SMP',
       originalLink:
         'https://www.jrcigars.com/item/boneshaker-lunatic/3-cigar-sampler/BSL3SMP.html',
-      inputs: ['/jr/boneshaker-group-placeholder.jpg'],
+      inputs: ['/jr/IMG_3749.jpeg'],
       outputs: [
-        '/jr/boneshaker-cigar-1-placeholder.jpg',
-        '/jr/boneshaker-cigar-2-placeholder.jpg',
-        '/jr/boneshaker-cigar-3-placeholder.jpg',
+        '/jr/Generated Image March 28, 2026 - 5_37PM.jpeg',
+        '/jr/Generated Image March 28, 2026 - 5_43PM.jpeg',
+        '/jr/Generated Image March 28, 2026 - 5_38PM.jpeg',
       ],
     },
   ],
