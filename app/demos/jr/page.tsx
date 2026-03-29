@@ -4,7 +4,7 @@ const demoData = {
   agencyName: 'Afterlight',
   clientName: 'JR Cigars',
   heroText:
-    'we took one group photo and turned it into individual product photos for each cigar',
+    'we took one group photo and generated individual product photos for each cigar',
   skus: [
     {
       id: 'sku1',
