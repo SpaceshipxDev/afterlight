@@ -20,7 +20,7 @@ const demoData = {
         '/jr/IMG_3750.png',
         '/jr/Generated Image March 28, 2026 - 5_27PM (1).jpeg',
         '/jr/Generated Image March 28, 2026 - 5_30PM.jpeg',
-        '/jr/IMG_3754.jpeg',
+        '/jr/IMG_3776.jpeg',
       ],
     },
     {
@@ -35,7 +35,7 @@ const demoData = {
         '/jr/Generated Image March 28, 2026 - 5_37PM.jpeg',
         '/jr/Generated Image March 28, 2026 - 5_43PM.jpeg',
         '/jr/Generated Image March 28, 2026 - 5_38PM.jpeg',
-        '/jr/IMG_3755.jpeg',
+        '/jr/IMG_3777.jpeg',
       ],
     },
   ],
