@@ -18,7 +18,9 @@ const demoData = {
         '/jr/Generated Image March 28, 2026 - 5_13PM.jpeg',
         '/jr/IMG_3747.png',
         '/jr/IMG_3750.png',
+        '/jr/IMG_3755.jpeg',
         '/jr/Generated Image March 28, 2026 - 5_27PM (1).jpeg',
+        '/jr/IMG_3754.jpeg',
         '/jr/Generated Image March 28, 2026 - 5_30PM.jpeg',
       ],
     },
@@ -176,7 +178,7 @@ export default function DemoPage() {
       <div className="mx-auto max-w-[1600px] px-6 py-12 md:py-32">
         <div className="mb-20 md:mb-32">
           <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-500 md:mb-4 md:text-[12px]">
-            Demo // {demoData.agencyName}
+            Demo
           </p>
           <h2 className="text-4xl font-bold uppercase tracking-tighter text-black sm:text-5xl md:text-7xl">
             {demoData.clientName}
@@ -236,7 +238,7 @@ export default function DemoPage() {
 
               <div className="flex w-full flex-col">
                 <SectionHeader
-                  title="Generated Catalog Results"
+                  title="Generated Results"
                   className="text-[13px] md:text-[14px]"
                 />
 
