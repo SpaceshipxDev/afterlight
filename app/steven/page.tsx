@@ -8,9 +8,6 @@ const slides = [
   {
     id: "hook",
     title: "A Personalized Internet.",
-    content: (
-
-    ),
     // The Cinematic Cold Open
     images: ["/steven-basketball.jpg"],
   },
@@ -73,6 +70,8 @@ const slides = [
         </p>
       </>
     ),
+    // The 3-Image Timeline Grid
+    images: ["/baby-1.jpg", "/baby-2.jpg", "/baby-3.jpg"],
   },
   {
     id: "today",
@@ -304,7 +303,16 @@ export default function Deck() {
                 }}
                 className="lg:w-1/2 w-full flex items-center justify-center"
               >
-                {slide.images!.length === 2 ? (
+                {slide.images!.length === 3 ? (
+                  // Grid for 3 images (Babies timeline)
+                  <div className="grid grid-cols-3 gap-2 md:gap-4 w-full">
+                    {slide.images!.map((imgSrc, i) => (
+                      <div key={i} className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.05)] border border-white/10 aspect-square">
+                        <img src={imgSrc} alt="Generated Campaign Timeline" className="w-full h-full object-cover" />
+                      </div>
+                    ))}
+                  </div>
+                ) : slide.images!.length === 2 ? (
                   // Grid for 2 images (Simplest Way slide)
                   <div className="grid grid-cols-2 gap-4 w-full">
                     {slide.images!.map((imgSrc, i) => (
