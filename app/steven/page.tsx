@@ -80,7 +80,7 @@ const slides = [
       <>
         <p className="mb-6">Right now, we generate product photography for brands.</p>
         <p className="text-neutral-400">
-          This gets us into merchant workflows, creates real value fast, and moves them from static images to dynamic ones. Our founding customer, Derek at <a href="https://www.axiscrew.com.au" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 underline decoration-neutral-600 underline-offset-4 transition-all relative z-50">Axis Crew</a>, already calls it 10x faster.
+          This gets us into merchant workflows, creates real value fast, and moves them from static images to dynamic ones. Our founding customer, Derek at <a href="https://www.axiscrew.com.au" target="_blank" rel="noopener noreferrer" className="text-white hover:text-neutral-300 underline decoration-neutral-600 underline-offset-4 transition-all relative z-50">Axis Crew</a>, already calls it "10x faster".
         </p>
       </>
     ),
