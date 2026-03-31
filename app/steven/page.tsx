@@ -9,9 +9,7 @@ const slides = [
     id: "hook",
     title: "A Personalized Internet.",
     content: (
-      <>
-        <p className="text-neutral-400">Making information yours.</p>
-      </>
+
     ),
     // The Cinematic Cold Open
     images: ["/steven-basketball.jpg"],
