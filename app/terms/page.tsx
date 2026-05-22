@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PiTriangleBold } from 'react-icons/pi';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Terms of Service — Afterlight',
@@ -326,9 +326,15 @@ export default function TermsPage() {
     <main className="min-h-screen bg-white text-neutral-900 font-sans selection:bg-neutral-200">
       <nav className="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-neutral-100">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center text-black" style={{ gap: '0.25em', fontSize: '18px' }}>
-            <PiTriangleBold style={{ width: '1.25em', height: '1.25em' }} />
-            <span className="font-semibold tracking-tight leading-none">Afterlight</span>
+          <Link href="/" aria-label="Afterlight home" className="flex items-center">
+            <Image
+              src="/afterlight-wordmark.png"
+              alt="Afterlight"
+              width={920}
+              height={195}
+              priority
+              className="h-6 w-auto select-none"
+            />
           </Link>
           <div className="flex items-center gap-7 text-[14px] font-medium text-neutral-600">
             <Link href="/use-cases" className="hover:text-neutral-900 transition-colors">Use Cases</Link>
