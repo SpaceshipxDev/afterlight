@@ -9,30 +9,30 @@ export const metadata = {
 
 const LAST_UPDATED = 'May 22, 2026';
 
-const pillars: { kicker: string; title: string; body: string }[] = [
+const guarantees: { id: string; title: string; body: string }[] = [
   {
-    kicker: '01',
-    title: 'Your likeness is never sold.',
+    id: 'no-likeness-sale',
+    title: '1. Your likeness is never sold.',
     body: 'Afterlight does not sell, rent, sublicense, syndicate, or otherwise transfer your face to any third party. Each campaign you approve is a one-time license to a single brand for a defined channel, geography, and date window. Nothing more. There is no aggregate likeness library being assembled in the background.',
   },
   {
-    kicker: '02',
-    title: 'Your data is never sold.',
+    id: 'no-data-sale',
+    title: '2. Your data is never sold.',
     body: 'We do not sell personal information. We do not share it with data brokers. We do not pass it to advertisers for cross-context targeting. We earn our 30% from the campaigns you approve — that is the entire business model. There is no second revenue line running on your data.',
   },
   {
-    kicker: '03',
-    title: 'Nothing posts without you.',
+    id: 'approval-gate',
+    title: '3. Nothing posts without you.',
     body: 'No AI-generated content that depicts you can publish to any platform without your explicit, per-asset approval inside Afterlight. The gate is enforced in code. A brand that attempts to publish without an approval record is in immediate breach and loses its license.',
   },
   {
-    kicker: '04',
-    title: 'Your face is not training data.',
+    id: 'not-training-data',
+    title: '4. Your face is not training data.',
     body: 'Reference photos you upload are used to generate the campaign assets you approve. They are not used to train foundation models, build biometric templates, or fine-tune systems that will later identify you elsewhere. Our generation providers operate under contracts that prohibit them from retaining your image beyond the request lifecycle or training their own models on it.',
   },
   {
-    kicker: '05',
-    title: 'You can pull the plug.',
+    id: 'revoke',
+    title: '5. You can pull the plug.',
     body: 'You can revoke any campaign license at any time. You can delete your reference photos at any time. You can close your account at any time. On revocation, brands have 72 hours to take paid campaigns down and 7 days for organic. On deletion, your reference assets are removed from active systems within 30 days and from backups within 90.',
   },
 ];
@@ -40,7 +40,7 @@ const pillars: { kicker: string; title: string; body: string }[] = [
 const rights: { id: string; title: string; body: React.ReactNode }[] = [
   {
     id: 'how-consent-works',
-    title: 'How consent actually works on Afterlight',
+    title: '6. How consent actually works on Afterlight',
     body: (
       <>
         <p>
@@ -60,7 +60,7 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
   },
   {
     id: 'what-we-do-not-do',
-    title: 'What we will never do, in plain English',
+    title: '7. What we will never do, in plain English',
     body: (
       <>
         <ul className="list-disc pl-6 space-y-3">
@@ -76,7 +76,7 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
   },
   {
     id: 'compensation',
-    title: 'Compensation, transparency, and the 30%',
+    title: '8. Compensation, transparency, and the 30%',
     body: (
       <>
         <p>
@@ -91,7 +91,7 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
   },
   {
     id: 'how-to-exercise',
-    title: 'How to exercise your rights',
+    title: '9. How to exercise your rights',
     body: (
       <>
         <p>
@@ -135,7 +135,7 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
   },
   {
     id: 'why',
-    title: 'Why we publish this',
+    title: '10. Why we publish this',
     body: (
       <>
         <p>
@@ -186,76 +186,25 @@ export default function CdrpPage() {
       </nav>
 
       <section className="border-b border-neutral-100">
-        <div className="max-w-[900px] mx-auto px-6 md:px-12 pt-20 md:pt-32 pb-14 md:pb-20">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-400 mb-5">
+        <div className="max-w-[720px] mx-auto px-6 md:px-12 pt-20 md:pt-24 pb-10 md:pb-14">
+          <h1 className="text-[32px] md:text-[40px] font-medium tracking-[-0.02em] text-neutral-900 leading-[1.1]">
             Creator Data Rights Policy
-          </p>
-          <h1 className="text-[44px] md:text-[68px] lg:text-[76px] font-medium tracking-[-0.03em] text-neutral-900 leading-[1.04]">
-            Your face is not a product.
           </h1>
-          <p className="text-[17px] md:text-[19px] text-neutral-500 leading-relaxed max-w-2xl mt-6 tracking-[-0.005em]">
-            Afterlight is built on per-campaign creator consent. Below is everything we promise
-            creators on the platform, written plainly, and the mechanics behind each promise.
+          <p className="text-[13px] text-neutral-500 mt-4 italic">Effective {LAST_UPDATED}</p>
+          <p className="text-[15px] text-neutral-600 leading-[1.75] mt-8">
+            Afterlight is built on per-campaign creator consent. Below is what that means in
+            practice — five guarantees we make to every creator on the platform, followed by the
+            mechanics behind each promise. Your face is not a product.
           </p>
-          <p className="text-[14px] text-neutral-400 mt-7">Last updated {LAST_UPDATED}.</p>
         </div>
       </section>
 
-      <section className="py-16 md:py-24 border-b border-neutral-100">
-        <div className="max-w-[1100px] mx-auto px-6 md:px-12">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-400 mb-10">
-            Five guarantees
-          </p>
-          <div className="grid gap-5 md:gap-6 md:grid-cols-2">
-            {pillars.map((p) => (
-              <article
-                key={p.kicker}
-                className="rounded-[24px] border border-neutral-200 bg-white p-7 md:p-9"
-              >
-                <p className="text-[12px] font-semibold tracking-[0.22em] text-neutral-400 mb-5">
-                  {p.kicker}
-                </p>
-                <h3 className="text-[22px] md:text-[26px] font-medium tracking-[-0.015em] text-neutral-900 leading-[1.2]">
-                  {p.title}
-                </h3>
-                <p className="text-[15px] text-neutral-600 leading-relaxed mt-4">{p.body}</p>
-              </article>
-            ))}
-            <article className="rounded-[24px] bg-neutral-900 text-white p-7 md:p-9 flex flex-col justify-between">
-              <div>
-                <p className="text-[12px] font-semibold tracking-[0.22em] text-white/55 mb-5">
-                  Enforcement
-                </p>
-                <h3 className="text-[22px] md:text-[26px] font-medium tracking-[-0.015em] leading-[1.2]">
-                  The approval gate is the product.
-                </h3>
-                <p className="text-[15px] text-white/70 leading-relaxed mt-4">
-                  If a brand ever runs a campaign depicting you without an approval record on
-                  file, write to us. We treat it as a material breach, force a takedown within 72
-                  hours, and terminate the brand&rsquo;s account.
-                </p>
-              </div>
-              <a
-                href="mailto:rights@tryafterlight.com"
-                className="inline-flex items-center gap-2 text-[14px] font-medium text-white mt-8 hover:opacity-80 transition-opacity"
-              >
-                rights@tryafterlight.com
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-14 md:py-20">
-        <div className="max-w-[820px] mx-auto px-6 md:px-12">
-          <nav aria-label="Section navigation" className="mb-12 md:mb-16 border-l-2 border-neutral-100 pl-5">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-400 mb-4">Contents</p>
-            <ol className="space-y-1.5 text-[14px] text-neutral-500">
-              {rights.map((s) => (
-                <li key={s.id}>
+      <section>
+        <div className="max-w-[720px] mx-auto px-6 md:px-12 py-12 md:py-16">
+          <nav aria-label="Section navigation" className="mb-2 pb-10 border-b border-neutral-100">
+            <ol className="text-[13px] leading-[1.9] text-neutral-500 columns-1 sm:columns-2 gap-x-10">
+              {[...guarantees, ...rights].map((s) => (
+                <li key={s.id} className="break-inside-avoid">
                   <a href={`#${s.id}`} className="hover:text-neutral-900 transition-colors">
                     {s.title}
                   </a>
@@ -264,10 +213,30 @@ export default function CdrpPage() {
             </ol>
           </nav>
 
-          <div className="space-y-14 text-[16px] leading-[1.75] text-neutral-700">
+          <div className="text-[15px] leading-[1.75] text-neutral-700">
+            {guarantees.map((s, idx) => (
+              <article
+                key={s.id}
+                id={s.id}
+                className={
+                  'scroll-mt-24 py-10 md:py-12 ' +
+                  (idx === 0 ? 'pt-10 md:pt-12' : 'border-t border-neutral-100')
+                }
+              >
+                <h2 className="text-[17px] font-semibold tracking-tight text-neutral-900 mb-5">
+                  {s.title}
+                </h2>
+                <p>{s.body}</p>
+              </article>
+            ))}
+
             {rights.map((s) => (
-              <article key={s.id} id={s.id} className="scroll-mt-24">
-                <h2 className="text-[22px] md:text-[26px] font-semibold tracking-[-0.01em] text-neutral-900 mb-4">
+              <article
+                key={s.id}
+                id={s.id}
+                className="scroll-mt-24 py-10 md:py-12 border-t border-neutral-100"
+              >
+                <h2 className="text-[17px] font-semibold tracking-tight text-neutral-900 mb-5">
                   {s.title}
                 </h2>
                 <div className="space-y-4">{s.body}</div>
@@ -275,23 +244,17 @@ export default function CdrpPage() {
             ))}
           </div>
 
-          <div className="mt-20 rounded-[24px] border border-neutral-200 bg-neutral-50 p-7 md:p-9">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-400 mb-4">
-              Related
-            </p>
-            <p className="text-[15px] text-neutral-600 leading-relaxed">
-              This policy is the creator-facing summary. For the underlying contract see the{' '}
-              <Link href="/terms" className="underline underline-offset-4 text-neutral-900 hover:text-black">
-                Terms of Service
-              </Link>
-              . For the broader data practices that apply to brands, employees, and visitors,
-              see the{' '}
-              <Link href="/privacy" className="underline underline-offset-4 text-neutral-900 hover:text-black">
-                Privacy Policy
-              </Link>
-              .
-            </p>
-          </div>
+          <p className="mt-14 pt-10 border-t border-neutral-100 text-[13px] text-neutral-500 leading-[1.75]">
+            See also the{' '}
+            <Link href="/terms" className="underline underline-offset-4 hover:text-neutral-900">
+              Terms of Service
+            </Link>{' '}
+            for the underlying contract and the{' '}
+            <Link href="/privacy" className="underline underline-offset-4 hover:text-neutral-900">
+              Privacy Policy
+            </Link>{' '}
+            for the broader data practices that apply to brands, employees, and visitors.
+          </p>
         </div>
       </section>
 

@@ -336,24 +336,20 @@ export default function TermsPage() {
       </nav>
 
       <section className="border-b border-neutral-100">
-        <div className="max-w-[820px] mx-auto px-6 md:px-12 pt-20 md:pt-28 pb-12 md:pb-16">
-          <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-400 mb-5">
-            Legal
-          </p>
-          <h1 className="text-[40px] md:text-[60px] font-medium tracking-[-0.03em] text-neutral-900 leading-[1.04]">
+        <div className="max-w-[720px] mx-auto px-6 md:px-12 pt-20 md:pt-24 pb-10 md:pb-14">
+          <h1 className="text-[32px] md:text-[40px] font-medium tracking-[-0.02em] text-neutral-900 leading-[1.1]">
             Terms of Service
           </h1>
-          <p className="text-[15px] text-neutral-500 mt-6">Last updated {LAST_UPDATED}.</p>
+          <p className="text-[13px] text-neutral-500 mt-4 italic">Effective {LAST_UPDATED}</p>
         </div>
       </section>
 
-      <section className="py-14 md:py-20">
-        <div className="max-w-[820px] mx-auto px-6 md:px-12">
-          <nav aria-label="Section navigation" className="mb-12 md:mb-16 border-l-2 border-neutral-100 pl-5">
-            <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-400 mb-4">Contents</p>
-            <ol className="space-y-1.5 text-[14px] text-neutral-500">
+      <section>
+        <div className="max-w-[720px] mx-auto px-6 md:px-12 py-12 md:py-16">
+          <nav aria-label="Section navigation" className="mb-2 pb-10 border-b border-neutral-100">
+            <ol className="text-[13px] leading-[1.9] text-neutral-500 columns-1 sm:columns-2 gap-x-10">
               {sections.map((s) => (
-                <li key={s.id}>
+                <li key={s.id} className="break-inside-avoid">
                   <a href={`#${s.id}`} className="hover:text-neutral-900 transition-colors">
                     {s.title}
                   </a>
@@ -362,10 +358,17 @@ export default function TermsPage() {
             </ol>
           </nav>
 
-          <div className="space-y-14 text-[16px] leading-[1.75] text-neutral-700">
-            {sections.map((s) => (
-              <article key={s.id} id={s.id} className="scroll-mt-24">
-                <h2 className="text-[22px] md:text-[26px] font-semibold tracking-[-0.01em] text-neutral-900 mb-4">
+          <div className="text-[15px] leading-[1.75] text-neutral-700">
+            {sections.map((s, idx) => (
+              <article
+                key={s.id}
+                id={s.id}
+                className={
+                  'scroll-mt-24 py-10 md:py-12 ' +
+                  (idx === 0 ? 'pt-10 md:pt-12' : 'border-t border-neutral-100')
+                }
+              >
+                <h2 className="text-[17px] font-semibold tracking-tight text-neutral-900 mb-5">
                   {s.title}
                 </h2>
                 <div className="space-y-4">{s.body}</div>
