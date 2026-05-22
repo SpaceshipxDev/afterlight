@@ -59,7 +59,7 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
           <li><strong>Account information.</strong> Name, email, role (creator or brand), and the social handles you choose to link.</li>
           <li><strong>Reference photos.</strong> The image(s) creators upload so brands can generate campaigns with their likeness.</li>
           <li><strong>Campaign records.</strong> Briefs, generated drafts, approval timestamps, channel, geography, and active dates. This is the consent ledger.</li>
-          <li><strong>Payment information.</strong> Processed by our payments partner (Stripe). We store the last four digits and a token, never the full card or bank number.</li>
+          <li><strong>Customer billing information.</strong> Processed by our payments partner (Stripe) for customer subscriptions and usage charges. We store the last four digits and a token, never the full card or bank number.</li>
           <li><strong>Communications.</strong> Messages between brands, creators, and our team that pass through Afterlight.</li>
           <li><strong>Product telemetry.</strong> Pages visited, features used, errors encountered. Used to debug and improve.</li>
         </ul>
@@ -108,9 +108,9 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
       <>
         <p>We use the data we collect to:</p>
         <ul className="list-disc pl-6 space-y-2 mt-3">
-          <li>Generate campaign drafts at the brand&rsquo;s request, using only reference photos belonging to the creator who accepted that brief.</li>
+          <li>Generate campaign drafts at the licensee&rsquo;s request, using only reference photos belonging to the creator who accepted that brief.</li>
           <li>Run the approval gate and store the consent record for audit.</li>
-          <li>Process payments and disburse creator earnings.</li>
+          <li>Bill customers for platform usage.</li>
           <li>Detect fraud, impersonation, and platform abuse.</li>
           <li>Communicate with you about your account and campaigns.</li>
           <li>Improve the product through aggregate, de-identified analytics.</li>
@@ -130,7 +130,7 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
         <ul className="list-disc pl-6 space-y-2 mt-3">
           <li><strong>Amazon Web Services</strong> — hosting and storage (United States).</li>
           <li><strong>Cloudflare</strong> — edge delivery and DDoS protection.</li>
-          <li><strong>Stripe</strong> — payment processing and payouts.</li>
+          <li><strong>Stripe</strong> — payment processing for customer subscriptions and usage charges.</li>
           <li><strong>Postmark</strong> — transactional email.</li>
           <li><strong>Generation providers</strong> — the AI providers that render approved campaign assets. They process reference images and prompts under contracts that prohibit them from retaining inputs beyond the request lifecycle or training their models on them.</li>
         </ul>

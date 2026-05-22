@@ -23,10 +23,13 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
           on behalf of a company, you represent that you have authority to bind it.
         </p>
         <p>
-          Afterlight is the licensed identity-rights and workflow layer for AI-generated influencer
-          advertising. Creators upload a reference photo. Brands generate short-form video ads with
-          that creator&rsquo;s likeness. Nothing publishes until the creator personally approves it.
-          These Terms protect that workflow.
+          Afterlight is a generation and consent platform for licensed AI influencer content.
+          Agencies and brands use Afterlight to produce short-form video ads with creator
+          likenesses. Creators upload a reference photo and approve every asset before it leaves
+          the platform. Afterlight provides the generation, approval, and recordkeeping workflow;
+          the underlying campaign relationship — including any compensation paid to the creator —
+          sits between the licensee running the campaign and the creator themselves. These Terms
+          protect that workflow.
         </p>
       </>
     ),
@@ -68,16 +71,18 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
     body: (
       <>
         <p>
-          When a creator uploads a reference photo and approves a specific campaign, they grant the
-          requesting brand a <strong>limited, revocable, campaign-specific license</strong> to use
-          the resulting AI-generated content in the channels, geographies, and dates listed in that
-          campaign&rsquo;s approval record. That license covers <em>that campaign and nothing else</em>.
+          When a creator uploads a reference photo and approves a specific campaign, they grant
+          the licensee identified in that campaign brief — typically the agency or brand running
+          the campaign — a <strong>limited, revocable, campaign-specific license</strong> to use
+          the resulting AI-generated content in the channels, geographies, and dates listed in
+          that campaign&rsquo;s approval record. That license covers{' '}
+          <em>that campaign and nothing else</em>.
         </p>
         <p>
-          A creator never grants Afterlight or any brand the right to: sell or sublicense their
-          likeness, build a biometric profile, train a foundation model on their face, generate
-          new content without their per-campaign approval, or run a campaign after the approved
-          window expires. Those rights are not for sale. See our{' '}
+          A creator never grants Afterlight or any licensee the right to: sell or sublicense
+          their likeness, build a biometric profile, train a foundation model on their face,
+          generate new content without their per-campaign approval, or run a campaign after the
+          approved window expires. Those rights are not for sale. See our{' '}
           <Link className="underline underline-offset-4 hover:text-neutral-900" href="/cdrp">
             Creator Data Rights Policy
           </Link>{' '}
@@ -93,26 +98,29 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
       <>
         <p>
           No AI-generated content that depicts a creator may be published to any platform without
-          that creator&rsquo;s explicit, per-asset approval recorded inside Afterlight. Brands agree
-          to treat the approval record as the sole authority on what is licensed. Posting an asset
-          that has not been approved through Afterlight is a material breach of these Terms and
-          terminates the brand&rsquo;s license immediately.
+          that creator&rsquo;s explicit, per-asset approval recorded inside Afterlight. Licensees
+          agree to treat the approval record as the sole authority on what is licensed. Posting
+          an asset that has not been approved through Afterlight is a material breach of these
+          Terms and terminates the licensee&rsquo;s license immediately.
         </p>
       </>
     ),
   },
   {
-    id: 'brand-responsibilities',
-    title: '6. Brand responsibilities',
+    id: 'customer-responsibilities',
+    title: '6. Customer responsibilities',
     body: (
       <>
-        <p>Brands using Afterlight agree to:</p>
+        <p>
+          Customers — the agencies, brands, and other licensees who run campaigns on Afterlight —
+          agree to:
+        </p>
         <ul className="list-disc pl-6 space-y-2 mt-3">
           <li>Disclose AI-generated content according to the rules of each platform you post to (including FTC endorsement guides and platform-specific AI-disclosure requirements).</li>
           <li>Only generate content depicting creators who have actively accepted your campaign brief inside Afterlight.</li>
           <li>Not use generated content to make claims the creator has not personally approved (medical, financial, political, or otherwise).</li>
           <li>Honor the channel, geography, and date window in each approval record.</li>
-          <li>Pay all campaign fees on the schedule agreed in the campaign brief.</li>
+          <li>Pay Afterlight&rsquo;s platform fees on the schedule set out in your order form, and handle any compensation owed to the creator directly with that creator.</li>
         </ul>
       </>
     ),
@@ -155,15 +163,17 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
     body: (
       <>
         <p>
-          Afterlight retains a thirty percent (30%) platform fee on each paid AI-generated campaign,
-          calculated on the gross campaign budget agreed between brand and creator. The remaining
-          seventy percent (70%) is paid to the creator on the schedule listed in the campaign brief.
+          Afterlight charges customers for access to and use of the generation platform. Fees are
+          set out in each customer&rsquo;s order form, statement of work, or applicable service
+          agreement, and may be structured as subscription, usage, or per-asset pricing. Customers
+          authorize Afterlight (or our payments partner) to charge the payment method on file for
+          amounts owed. Disputes about a specific charge must be raised within thirty (30) days of
+          the invoice date.
         </p>
         <p>
-          Brands authorize Afterlight (or our payments partner) to charge the payment method on
-          file for amounts owed. Creators authorize Afterlight to disburse earnings to the payout
-          method on file. Disputes about a specific charge must be raised within thirty (30) days
-          of the invoice date.
+          Afterlight does not collect, hold, disburse, or take a cut of any compensation paid by a
+          licensee to a creator. Those arrangements sit entirely between the licensee running the
+          campaign and the creator participating in it.
         </p>
       </>
     ),
@@ -174,15 +184,15 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
     body: (
       <>
         <p>
-          The creator retains all rights in their underlying likeness and any reference photos they
-          upload. The brand owns the campaign brief, product imagery, and product trademarks they
-          supply. Afterlight owns the platform itself: the software, the workflow, the trained
-          orchestration systems, the approval ledger, and all derivative analytics.
+          The creator retains all rights in their underlying likeness and any reference photos
+          they upload. The customer owns the campaign brief, product imagery, and product
+          trademarks they supply. Afterlight owns the platform itself: the software, the workflow,
+          the trained orchestration systems, the approval ledger, and all derivative analytics.
         </p>
         <p>
-          Generated campaign assets are jointly used under the campaign license described in
-          Section 4. Neither party may exploit those assets outside that license without written
-          consent from the creator.
+          Generated campaign assets are used under the campaign license described in Section 4.
+          Neither the licensee nor any third party may exploit those assets outside that license
+          without written consent from the creator.
         </p>
       </>
     ),
@@ -194,9 +204,9 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
       <>
         <p>
           A creator may revoke the license to any specific campaign at any time. On revocation,
-          the brand must cease running the affected assets across all paid channels within
+          the licensee must cease running the affected assets across all paid channels within
           seventy-two (72) hours and remove organic posts depicting the creator within seven (7)
-          days. Afterlight will support enforcement on request and may terminate brand accounts
+          days. Afterlight will support enforcement on request and may terminate customer accounts
           that fail to comply.
         </p>
       </>
@@ -214,7 +224,7 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
           </a>
           . We may suspend or terminate accounts that breach these Terms, abuse the approval gate,
           or expose creators to harm. On termination, all outstanding campaign licenses immediately
-          revert to the creator unless the brand and creator agree otherwise in writing.
+          revert to the creator unless the licensee and creator agree otherwise in writing.
         </p>
       </>
     ),
@@ -253,10 +263,10 @@ const sections: { id: string; title: string; body: React.ReactNode }[] = [
     body: (
       <>
         <p>
-          Brands indemnify Afterlight against any third-party claim arising from a campaign brief,
-          product representation, or use of generated content outside the approved license.
-          Creators indemnify Afterlight against any claim that a reference photo they uploaded was
-          not theirs to use.
+          Customers indemnify Afterlight against any third-party claim arising from a campaign
+          brief, product representation, or use of generated content outside the approved license.
+          Creators indemnify Afterlight against any claim that a reference photo they uploaded
+          was not theirs to use.
         </p>
       </>
     ),

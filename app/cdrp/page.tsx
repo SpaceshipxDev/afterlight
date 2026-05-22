@@ -18,12 +18,12 @@ const guarantees: { id: string; title: string; body: string }[] = [
   {
     id: 'no-data-sale',
     title: '2. Your data is never sold.',
-    body: 'We do not sell personal information. We do not share it with data brokers. We do not pass it to advertisers for cross-context targeting. We earn our 30% from the campaigns you approve — that is the entire business model. There is no second revenue line running on your data.',
+    body: 'We do not sell personal information. We do not share it with data brokers. We do not pass it to advertisers for cross-context targeting. Afterlight earns from the agencies and brands who pay to use the generation platform — that is the entire business model. There is no second revenue line running on your data.',
   },
   {
     id: 'approval-gate',
     title: '3. Nothing posts without you.',
-    body: 'No AI-generated content that depicts you can publish to any platform without your explicit, per-asset approval inside Afterlight. The gate is enforced in code. A brand that attempts to publish without an approval record is in immediate breach and loses its license.',
+    body: 'No AI-generated content that depicts you can publish to any platform without your explicit, per-asset approval inside Afterlight. The gate is enforced in code. Any agency or brand that attempts to publish without an approval record is in immediate breach and loses its license.',
   },
   {
     id: 'not-training-data',
@@ -33,7 +33,7 @@ const guarantees: { id: string; title: string; body: string }[] = [
   {
     id: 'revoke',
     title: '5. You can pull the plug.',
-    body: 'You can revoke any campaign license at any time. You can delete your reference photos at any time. You can close your account at any time. On revocation, brands have 72 hours to take paid campaigns down and 7 days for organic. On deletion, your reference assets are removed from active systems within 30 days and from backups within 90.',
+    body: 'You can revoke any campaign license at any time. You can delete your reference photos at any time. You can close your account at any time. On revocation, the agency or brand running the campaign has 72 hours to take paid placements down and 7 days for organic. On deletion, your reference assets are removed from active systems within 30 days and from backups within 90.',
   },
 ];
 
@@ -44,16 +44,17 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
     body: (
       <>
         <p>
-          Every campaign on Afterlight is gated by an approval record. A brand cannot generate
-          content depicting you until you have accepted their brief inside the platform. Once
-          drafts are rendered, they sit in your queue. You can approve, request changes, or
-          reject each asset individually. Only assets you have personally approved become licensed.
+          Every campaign on Afterlight is gated by an approval record. The agency or brand running
+          the campaign cannot generate content depicting you until you have accepted their brief
+          inside the platform. Once drafts are rendered, they sit in your queue. You can approve,
+          request changes, or reject each asset individually. Only assets you have personally
+          approved become licensed.
         </p>
         <p>
-          The approval record captures: which assets you approved, the date you approved them, the
-          channels they can run on, the geographies they can run in, and the date the license
-          expires. That record is the entire universe of what the brand is allowed to do. Anything
-          outside it is a breach of our Terms.
+          The approval record captures: which assets you approved, the date you approved them,
+          the channels they can run on, the geographies they can run in, and the date the license
+          expires. That record is the entire universe of what the licensee is allowed to do.
+          Anything outside it is a breach of our Terms.
         </p>
       </>
     ),
@@ -67,7 +68,7 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
           <li>We will not sell your likeness as a stock asset, a template, an avatar, or a model.</li>
           <li>We will not bundle your face into a dataset and sell access to other companies.</li>
           <li>We will not train an internal model on your photos to generate &ldquo;creators like you&rdquo; for someone else.</li>
-          <li>We will not run a campaign you have not approved, even if the brand asks nicely.</li>
+          <li>We will not run a campaign you have not approved, even if the agency or brand asks nicely.</li>
           <li>We will not retain your reference photos after you delete them, except in the encrypted backup window described above.</li>
           <li>We will not surprise you with a policy change that weakens any of these guarantees. Material changes are announced by email 14 days before they take effect, and we will not apply them retroactively to campaigns you already approved.</li>
         </ul>
@@ -75,16 +76,22 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
     ),
   },
   {
-    id: 'compensation',
-    title: '8. Compensation, transparency, and the 30%',
+    id: 'where-afterlight-sits',
+    title: '8. Where Afterlight sits in the deal',
     body: (
       <>
         <p>
-          Afterlight takes a flat 30% platform fee on the gross budget of each paid AI-generated
-          campaign you approve. The remaining 70% goes to you. The fee is visible inside the
-          campaign brief before you accept it. There is no markup we hide, no second cut routed
-          through an opaque subsidiary, and no clause that lets us claim more if the campaign
-          performs well.
+          Afterlight is the generation and consent layer. We make it possible for an agency or
+          brand to produce licensed AI content, and we make sure nothing reaches your audience
+          without your explicit approval. We are not the party hiring you, paying you, or running
+          your campaigns end-to-end.
+        </p>
+        <p>
+          Your compensation for any campaign is set by the agency or brand running it, on whatever
+          terms you negotiated directly with them. Afterlight is not a party to that arrangement,
+          does not hold or disburse your earnings, and does not take a cut of what you are paid.
+          Our revenue comes from the agencies and brands who pay to use the platform — that is
+          the whole business model.
         </p>
       </>
     ),
@@ -104,7 +111,7 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
             <a className="underline underline-offset-4 hover:text-neutral-900" href="mailto:rights@tryafterlight.com">
               rights@tryafterlight.com
             </a>
-            . Brands have 72 hours to take paid placements down.
+            . The licensee has 72 hours to take paid placements down.
           </li>
           <li>
             <strong>Delete reference photos:</strong> from the account page, or by writing to the
@@ -127,7 +134,7 @@ const rights: { id: string; title: string; body: React.ReactNode }[] = [
             <a className="underline underline-offset-4 hover:text-neutral-900" href="mailto:rights@tryafterlight.com">
               rights@tryafterlight.com
             </a>
-            . We enforce takedowns within 72 hours and pursue the brand for breach.
+            . We enforce takedowns within 72 hours and pursue the licensee for breach.
           </li>
         </ul>
       </>
@@ -192,9 +199,11 @@ export default function CdrpPage() {
           </h1>
           <p className="text-[13px] text-neutral-500 mt-4 italic">Effective {LAST_UPDATED}</p>
           <p className="text-[15px] text-neutral-600 leading-[1.75] mt-8">
-            Afterlight is built on per-campaign creator consent. Below is what that means in
-            practice — five guarantees we make to every creator on the platform, followed by the
-            mechanics behind each promise. Your face is not a product.
+            Afterlight is the generation and consent layer for licensed AI influencer content.
+            Agencies and brands use it to produce short-form ads; creators consent before anything
+            is generated, and again before anything is published. Below are five guarantees we
+            make to every creator on the platform, followed by the mechanics behind each promise.
+            Your face is not a product.
           </p>
         </div>
       </section>
