@@ -276,6 +276,7 @@ export default function PrivacyPage() {
             <Link href="/use-cases" className="hover:text-neutral-900 transition-colors">Use Cases</Link>
             <Link href="/pricing" className="hover:text-neutral-900 transition-colors">Pricing</Link>
             <Link href="/api" className="hover:text-neutral-900 transition-colors">API</Link>
+            <Link href="/cdrp" className="hover:text-neutral-900 transition-colors">Trust</Link>
             <Link
               href="/login"
               className="inline-flex items-center gap-2 bg-white text-neutral-700 border border-neutral-200 rounded-full px-5 py-2 text-[14px] font-medium hover:text-black hover:border-black hover:bg-neutral-50 transition-all"
