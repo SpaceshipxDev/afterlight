@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const metadata = {
   title: 'Creator Data Rights Policy — Afterlight',
@@ -174,12 +173,12 @@ export default function CdrpPage() {
       <nav className="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-neutral-100">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
           <Link href="/" aria-label="Afterlight home" className="flex items-center">
-            <Image
-              src="/afterlight-wordmark.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/afterlight-wordmark.svg"
               alt="Afterlight"
-              width={920}
-              height={195}
-              priority
+              width={919}
+              height={193}
               className="h-6 w-auto select-none"
             />
           </Link>
