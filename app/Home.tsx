@@ -1,8 +1,5 @@
-// tryafterlight.com — industrial home (2026-11-01).
-// Numbers are the verified figures from the Oct 30 YC/speedrun pull:
-// week to Oct 29: 101 workers at 7 factories scanned 12,867 times (3x a month earlier);
-// first factory live since May, scans on 174 of 178 days; 14 factories, 9 paying;
-// ~1,600 requests in two months, 1,167 agent ships; one owner 707 asks since Sep 16.
+// tryafterlight.com — industrial home (2026-11-01). Low key on purpose: no pitch copy.
+// Figures = verified Oct 30 pull, week to Oct 29: 101 workers at 7 factories scanned 12,867 times.
 
 const CONTACT = "mailto:harry@tryafterlight.com";
 const WORKERS = 101;
@@ -180,32 +177,16 @@ function AskChat() {
 
 /* ---------- page ---------- */
 
-function Beat({
-  n,
-  title,
-  body,
-  caption,
-  visual,
-  flip,
-}: {
-  n: string;
-  title: string;
-  body: string;
-  caption: string;
-  visual: React.ReactNode;
-  flip?: boolean;
-}) {
+function Beat({ title, body, visual, flip }: { title: string; body: string; visual: React.ReactNode; flip?: boolean }) {
   return (
-    <div className="grid items-center gap-12 md:grid-cols-2 md:gap-20">
+    <div className="grid items-center gap-10 md:grid-cols-2 md:gap-20">
       <div className={flip ? "md:order-2" : ""}>
-        <div className="text-[13px] font-medium text-[#86868b]">{n}</div>
-        <h3 className="mt-3 text-[32px] font-semibold leading-[1.1] tracking-[-0.02em] text-[#1d1d1f] sm:text-[40px]">{title}</h3>
-        <p className="mt-4 max-w-[440px] text-[17px] leading-[1.55] text-[#6e6e73] sm:text-[19px]">{body}</p>
+        <h3 className="text-[28px] font-semibold leading-[1.15] tracking-[-0.02em] text-[#1d1d1f] sm:text-[34px]">{title}</h3>
+        <p className="mt-3 max-w-[420px] text-[17px] leading-[1.55] text-[#6e6e73]">{body}</p>
       </div>
-      <figure className={`flex flex-col items-center ${flip ? "md:order-1" : ""}`}>
-        <div className="flex min-h-[420px] w-full items-center justify-center rounded-[28px] bg-[#f5f5f7] px-6 py-12">{visual}</div>
-        <figcaption className="mt-3 text-[13px] text-[#86868b]">{caption}</figcaption>
-      </figure>
+      <div className={`flex min-h-[420px] w-full items-center justify-center rounded-[28px] bg-[#f5f5f7] px-6 py-12 ${flip ? "md:order-1" : ""}`}>
+        {visual}
+      </div>
     </div>
   );
 }
@@ -213,7 +194,6 @@ function Beat({
 export default function Home() {
   return (
     <div className="al-home min-h-screen bg-white text-[#1d1d1f]">
-      {/* Hero: the floor */}
       <section className="bg-black text-white">
         <nav className="mx-auto flex h-16 max-w-[1100px] items-center justify-between px-6">
           <Wordmark light />
@@ -224,10 +204,10 @@ export default function Home() {
 
         <div className="mx-auto max-w-[1100px] px-6 pb-24 pt-20 text-center sm:pb-28 sm:pt-28">
           <h1 className="mx-auto max-w-[860px] text-[44px] font-semibold leading-[1.04] tracking-[-0.035em] sm:text-[76px]">
-            Factory software that builds itself.
+            Software for factories.
           </h1>
-          <p className="mx-auto mt-6 max-w-[620px] text-[19px] leading-[1.5] text-[#a1a1a6] sm:text-[22px]">
-            A factory sends us the Excel they run on. An hour later it’s their production system, and from then on they change it by asking.
+          <p className="mx-auto mt-6 max-w-[560px] text-[19px] leading-[1.5] text-[#a1a1a6] sm:text-[22px]">
+            Made from the spreadsheet a factory already runs on, and changed by asking.
           </p>
 
           <div className="mt-20 sm:mt-24">
@@ -237,83 +217,39 @@ export default function Home() {
               101 workers. 12,867 scans.
             </div>
             <p className="mx-auto mt-4 max-w-[560px] text-[16px] leading-[1.55] text-[#86868b] sm:text-[17px]">
-              Each dot is one person on a factory floor, scanning a part as it moves to the next step. Three times as
-              many scans as a month before.
+              One dot for each person who scanned a part on a factory floor.
             </p>
           </div>
         </div>
       </section>
 
-      {/* How it works */}
       <section className="mx-auto max-w-[1100px] px-6 py-24 sm:py-32">
-        <div className="flex flex-col gap-24 sm:gap-32">
+        <div className="flex flex-col gap-20 sm:gap-28">
           <Beat
-            n="01"
-            title="Their Excel, running."
-            body="Every factory works differently, so we start from the sheet they already trust. Same columns, same steps, live the same day."
-            caption="Production sheet in, production system out."
+            title="From their own sheet."
+            body="Each factory is set up from the production spreadsheet it already uses. Same columns, same steps."
             visual={<ExcelToSystem />}
           />
           <Beat
-            n="02"
-            title="Every part, scanned."
-            body="Each drawing prints with a QR code. Workers scan it at every step with the phone already in their pocket. The owner sees where every order is."
-            caption="Scan, tap done. No training."
+            title="Scanned at every step."
+            body="Every drawing carries a QR code. Workers scan it with their phone as the part moves on."
             visual={<PhoneScan />}
             flip
           />
           <Beat
-            n="03"
             title="Changed by asking."
-            body="Anyone in the factory types what they want, or asks Si, our agent in their WeChat group. It writes the change, tests it and ships it in minutes."
-            caption="“Turn orders due in three days red.” Live minutes later."
+            body="When a factory wants something different, they say so in their WeChat group, and it changes."
             visual={<AskChat />}
           />
         </div>
       </section>
 
-      {/* One owner */}
-      <section className="border-t border-[#e8e8ed]">
-        <div className="mx-auto max-w-[1100px] px-6 py-24 text-center sm:py-32">
-          <div className="text-[96px] font-semibold leading-none tracking-[-0.05em] sm:text-[160px]">707</div>
-          <p className="mx-auto mt-6 max-w-[560px] text-[20px] leading-[1.45] text-[#6e6e73] sm:text-[24px]">
-            changes asked for by one factory owner since September 16. The software now works the way that factory does.
-          </p>
-
-          <dl className="mx-auto mt-20 grid max-w-[880px] grid-cols-2 gap-y-12 sm:grid-cols-4">
-            {[
-              ["14", "factories live"],
-              ["9", "pay us"],
-              ["1,167", "changes shipped by our agents in two months"],
-              ["174 / 178", "days with scans at our first factory since May"],
-            ].map(([v, k]) => (
-              <div key={k} className="flex flex-col px-3">
-                <dt className="order-2 mx-auto mt-2 max-w-[180px] text-[14px] leading-[1.4] text-[#86868b]">{k}</dt>
-                <dd className="order-1 text-[32px] font-semibold tracking-[-0.03em] sm:text-[40px]">{v}</dd>
-              </div>
-            ))}
-          </dl>
+      <footer className="border-t border-[#e8e8ed]">
+        <div className="mx-auto flex max-w-[1100px] flex-col items-center justify-between gap-2 px-6 py-8 text-[13px] text-[#86868b] sm:flex-row">
+          <span>© 2026 Afterlight, Inc.</span>
+          <a href={CONTACT} className="transition-colors hover:text-[#1d1d1f]">harry@tryafterlight.com</a>
         </div>
-      </section>
-
-      {/* Close */}
-      <section className="bg-black text-white">
-        <div className="mx-auto max-w-[1100px] px-6 py-24 text-center sm:py-32">
-          <h2 className="mx-auto max-w-[760px] text-[36px] font-semibold leading-[1.08] tracking-[-0.03em] sm:text-[56px]">
-            Built on factory floors in China. American machine shops are next.
-          </h2>
-          <a
-            href={CONTACT}
-            className="mt-10 inline-flex items-center rounded-full bg-white px-7 py-3.5 text-[16px] font-medium text-black transition-opacity hover:opacity-85"
-          >
-            Talk to us
-          </a>
-        </div>
-        <footer className="mx-auto flex max-w-[1100px] flex-col items-center justify-between gap-3 border-t border-[#1d1d1f] px-6 py-8 text-[13px] text-[#6e6e73] sm:flex-row">
-          <Wordmark light />
-          <span>© 2026 Afterlight, Inc. · San Francisco · Suzhou</span>
-        </footer>
-      </section>
+      </footer>
     </div>
   );
 }
