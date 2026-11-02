@@ -1,0 +1,86 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Afterlight" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e8]: Afterlight
+        - generic [ref=e9]:
+          - link "Use Cases" [ref=e10] [cursor=pointer]:
+            - /url: /use-cases
+          - link "Pricing" [ref=e11] [cursor=pointer]:
+            - /url: /pricing
+          - link "Login" [ref=e12] [cursor=pointer]:
+            - /url: /login
+    - generic [ref=e14]:
+      - paragraph [ref=e15]: Pricing
+      - heading "Try Afterlight free." [level=1] [ref=e16]
+      - paragraph [ref=e17]: Send 10 product photos. We generate campaign-ready images in your brand’s style. No commitment, no payment.
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - paragraph [ref=e22]: Free trial
+            - paragraph [ref=e23]: Start here
+          - heading "10 SKUs" [level=2] [ref=e24]
+          - paragraph [ref=e25]: On us. No card required.
+          - list [ref=e27]:
+            - listitem [ref=e28]:
+              - img [ref=e29]
+              - text: 10 SKUs generated
+            - listitem [ref=e31]:
+              - img [ref=e32]
+              - text: Brand-trained on your catalog
+            - listitem [ref=e34]:
+              - img [ref=e35]
+              - text: Source files at full PDP resolution
+            - listitem [ref=e37]:
+              - img [ref=e38]
+              - text: Reply within 24 hours
+          - link "Start free trial" [ref=e40] [cursor=pointer]:
+            - /url: mailto:harry@tryafterlight.com,lorin@tryafterlight.com?subject=10-SKU%20free%20trial
+            - text: Start free trial
+            - img [ref=e41]
+          - paragraph [ref=e43]:
+            - text: Or write to
+            - link "harry@tryafterlight.com" [ref=e44] [cursor=pointer]:
+              - /url: mailto:harry@tryafterlight.com
+            - text: ·
+            - link "lorin@tryafterlight.com" [ref=e45] [cursor=pointer]:
+              - /url: mailto:lorin@tryafterlight.com
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - paragraph [ref=e48]: Enterprise
+            - paragraph [ref=e49]: For brands at scale
+          - heading "Custom" [level=2] [ref=e50]
+          - paragraph [ref=e51]: Quoted to scope. Pilots run 1–4 weeks.
+          - list [ref=e53]:
+            - listitem [ref=e54]:
+              - img [ref=e55]
+              - text: Unlimited generations during the pilot
+            - listitem [ref=e57]:
+              - img [ref=e58]
+              - text: Direct Slack with the founders
+            - listitem [ref=e60]:
+              - img [ref=e61]
+              - text: White-glove onboarding
+            - listitem [ref=e63]:
+              - img [ref=e64]
+              - text: Quoted to catalog size and turnaround
+          - link "Talk to a founder" [ref=e66] [cursor=pointer]:
+            - /url: mailto:harry@tryafterlight.com,lorin@tryafterlight.com?subject=Afterlight%20enterprise%20pilot
+            - text: Talk to a founder
+            - img [ref=e67]
+          - paragraph [ref=e69]: We reply within 24 hours.
+      - paragraph [ref=e70]: Self-serve plans are coming. For now, every customer goes through a pilot first.
+    - generic [ref=e72]:
+      - generic [ref=e73]: © 2026 Afterlight, Inc.
+      - generic [ref=e74]:
+        - link "Use Cases" [ref=e75] [cursor=pointer]:
+          - /url: /use-cases
+        - link "Pricing" [ref=e76] [cursor=pointer]:
+          - /url: /pricing
+  - button "Open Next.js Dev Tools" [ref=e82] [cursor=pointer]:
+    - img [ref=e83]
+  - alert [ref=e86]

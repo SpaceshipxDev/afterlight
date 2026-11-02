@@ -1,0 +1,10 @@
+- generic [active]:
+  - main [ref=e1]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - heading "You care more when it's you" [level=1] [ref=e7]
+        - paragraph [ref=e9]: And so does every Nike customer.
+      - img "Generated Campaign" [ref=e12]
+  - button "Open Next.js Dev Tools" [ref=e20] [cursor=pointer]:
+    - img [ref=e21]
+  - alert [ref=e24]

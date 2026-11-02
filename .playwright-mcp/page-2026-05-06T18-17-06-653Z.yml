@@ -1,0 +1,79 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Afterlight" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e8]: Afterlight
+        - link "All pilots" [ref=e9] [cursor=pointer]:
+          - /url: /use-cases
+          - img [ref=e10]
+          - text: All pilots
+    - generic [ref=e13]:
+      - paragraph [ref=e15]: JR Cigars
+      - heading "One group photo. A full SKU catalog." [level=1] [ref=e16]
+      - paragraph [ref=e17]: Turning a single multi-cigar group shot into individual product photography for every SKU — at full PDP resolution, in JR’s catalog style.
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: Scope
+          - paragraph [ref=e21]: 2 samplers
+        - generic [ref=e22]:
+          - paragraph [ref=e23]: Output
+          - paragraph [ref=e24]: 10+ SKU shots
+        - generic [ref=e25]:
+          - paragraph [ref=e26]: Timeline
+          - paragraph [ref=e27]: 2-day sprint
+        - generic [ref=e28]:
+          - paragraph [ref=e29]: Status
+          - paragraph [ref=e30]: Complete
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: "01"
+          - heading "Montecristo Lovers Edition II" [level=2] [ref=e35]
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - paragraph [ref=e38]: Before
+            - img "Montecristo Lovers Edition II — source 1" [ref=e41]
+          - generic [ref=e42]:
+            - paragraph [ref=e43]: After
+            - generic [ref=e44]:
+              - img "Montecristo Lovers Edition II — generated 1" [ref=e46]
+              - img "Montecristo Lovers Edition II — generated 2" [ref=e48]
+              - img "Montecristo Lovers Edition II — generated 3" [ref=e50]
+              - img "Montecristo Lovers Edition II — generated 4" [ref=e52]
+              - img "Montecristo Lovers Edition II — generated 5" [ref=e54]
+              - img "Montecristo Lovers Edition II — generated 6" [ref=e56]
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: "02"
+          - heading "Boneshaker Lunatic 3 Cigar Sampler" [level=2] [ref=e60]
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - paragraph [ref=e63]: Before
+            - img "Boneshaker Lunatic 3 Cigar Sampler — source 1" [ref=e66]
+          - generic [ref=e67]:
+            - paragraph [ref=e68]: After
+            - generic [ref=e69]:
+              - img "Boneshaker Lunatic 3 Cigar Sampler — generated 1" [ref=e71]
+              - img "Boneshaker Lunatic 3 Cigar Sampler — generated 2" [ref=e73]
+              - img "Boneshaker Lunatic 3 Cigar Sampler — generated 3" [ref=e75]
+              - img "Boneshaker Lunatic 3 Cigar Sampler — generated 4" [ref=e77]
+    - generic [ref=e79]:
+      - paragraph [ref=e80]: Run a pilot like this
+      - heading "Skip your next photoshoot." [level=2] [ref=e81]
+      - link "Get on the waitlist" [ref=e82] [cursor=pointer]:
+        - /url: /
+        - text: Get on the waitlist
+        - img [ref=e83]
+    - generic [ref=e86]:
+      - generic [ref=e87]: © 2026 Afterlight, Inc.
+      - generic [ref=e88]:
+        - link "Use Cases" [ref=e89] [cursor=pointer]:
+          - /url: /use-cases
+        - link "Pricing" [ref=e90] [cursor=pointer]:
+          - /url: /pricing
+  - button "Open Next.js Dev Tools" [ref=e96] [cursor=pointer]:
+    - img [ref=e97]
+  - alert [ref=e100]

@@ -1,0 +1,444 @@
+{
+  "featuredSlugs": [
+    "2026-floral-zip-sleeper-with-lilac-trim",
+    "2026-white-zip-sleeper-with-red-fire-trucks-and-hearts",
+    "2024-rust-and-cream-checker-short-sleeve-pajama-set",
+    "2024-rust-and-cream-checker-sleeveless-sleep-sack",
+    "2024-two-piece-pajama-set-with-oversized-blue-watercolor-hearts",
+    "2024-sleeveless-sleep-sack-with-blue-and-lavender-dinosaur-print"
+  ],
+  "products": [
+    {
+      "id": "03.23_PDP_SW_2Blue_62eecccd-ff32-4e21-a35b-ab3304bc5a35",
+      "slug": "2023-teal-quilted-wearable-sleep-bag-with-a-front-zipper",
+      "fileName": "03.23_PDP_SW_2Blue_62eecccd-ff32-4e21-a35b-ab3304bc5a35.webp",
+      "title": "Teal quilted wearable sleep bag with a front zipper",
+      "description": "A solid teal quilted sleep bag with a rounded bottom, shoulder snaps, and a centered front zipper, photographed flat on a white background.",
+      "category": "Wearable Sleep Bag",
+      "releaseYear": 2023,
+      "highlights": [
+        "Quilted",
+        "Front zipper",
+        "Shoulder snaps"
+      ],
+      "image": {
+        "src": "/catalog/03.23_PDP_SW_2Blue_62eecccd-ff32-4e21-a35b-ab3304bc5a35.webp",
+        "alt": "Teal quilted wearable sleep bag with a front zipper"
+      }
+    },
+    {
+      "id": "03.23_PDP_WB_1Grey_dfeb5ce1-05d0-4fbe-a65c-7f491f707c21",
+      "slug": "2023-white-quilted-baby-blanket-with-silver-satin-trim",
+      "fileName": "03.23_PDP_WB_1Grey_dfeb5ce1-05d0-4fbe-a65c-7f491f707c21.webp",
+      "title": "White quilted baby blanket with silver satin trim",
+      "description": "A folded white baby blanket with diamond quilting, small silver dot accents, and glossy silver satin edging, shown with one corner turned back.",
+      "category": "Blanket",
+      "releaseYear": 2023,
+      "highlights": [
+        "Quilted",
+        "Satin trim"
+      ],
+      "image": {
+        "src": "/catalog/03.23_PDP_WB_1Grey_dfeb5ce1-05d0-4fbe-a65c-7f491f707c21.webp",
+        "alt": "White quilted baby blanket with silver satin trim"
+      }
+    },
+    {
+      "id": "07.23_PDP_PinkRainbow_BabyBlanket_WebWhite_08dd23e2-9fa0-4ad3-b86f-5d0babbe9576",
+      "slug": "2023-white-baby-blanket-with-pink-rainbow-print-and-pink-trim",
+      "fileName": "07.23_PDP_PinkRainbow_BabyBlanket_WebWhite_08dd23e2-9fa0-4ad3-b86f-5d0babbe9576.webp",
+      "title": "White baby blanket with pink rainbow print and pink trim",
+      "description": "A folded white blanket covered in soft pink rainbow motifs, finished with medium-pink binding and displayed flat against a white background.",
+      "category": "Blanket",
+      "releaseYear": 2023,
+      "highlights": [
+        "Rainbow print",
+        "Pink trim"
+      ],
+      "image": {
+        "src": "/catalog/07.23_PDP_PinkRainbow_BabyBlanket_WebWhite_08dd23e2-9fa0-4ad3-b86f-5d0babbe9576.webp",
+        "alt": "White baby blanket with pink rainbow print and pink trim"
+      }
+    },
+    {
+      "id": "07.23_PDP_PinkRainbow_TPJ_WebWhite_fbdc6b11-8a8d-4f64-b977-b1343570ada5",
+      "slug": "2023-two-piece-pajama-set-with-pink-rainbows-and-pink-cuffs",
+      "fileName": "07.23_PDP_PinkRainbow_TPJ_WebWhite_fbdc6b11-8a8d-4f64-b977-b1343570ada5.webp",
+      "title": "Two-piece pajama set with pink rainbows and pink cuffs",
+      "description": "A long-sleeve toddler pajama set featuring a white top and matching pants patterned with pink rainbows, plus darker pink trim at the neckline, cuffs, and ankles.",
+      "category": "Pajama Set",
+      "releaseYear": 2023,
+      "highlights": [
+        "Long sleeves",
+        "Rainbow print",
+        "Pink trim"
+      ],
+      "image": {
+        "src": "/catalog/07.23_PDP_PinkRainbow_TPJ_WebWhite_fbdc6b11-8a8d-4f64-b977-b1343570ada5.webp",
+        "alt": "Two-piece pajama set with pink rainbows and pink cuffs"
+      }
+    },
+    {
+      "id": "08.23_PDP_Sage_PJ2_WebWhite",
+      "slug": "2023-solid-sage-zip-romper-with-long-sleeves-and-cuffed-ankles",
+      "fileName": "08.23_PDP_Sage_PJ2_WebWhite.webp",
+      "title": "Solid sage zip romper with long sleeves and cuffed ankles",
+      "description": "A minimalist one-piece sleeper in soft sage green with long sleeves, a diagonal front zipper, and foldover cuffed ankles, laid flat on white.",
+      "category": "Zip Sleeper",
+      "releaseYear": 2023,
+      "highlights": [
+        "Long sleeves",
+        "Front zipper"
+      ],
+      "image": {
+        "src": "/catalog/08.23_PDP_Sage_PJ2_WebWhite.webp",
+        "alt": "Solid sage zip romper with long sleeves and cuffed ankles"
+      }
+    },
+    {
+      "id": "2024_Black_PC_webwhite_8560058f-85e9-417d-88ee-db4a0cfb077f",
+      "slug": "2024-solid-black-rectangular-pillow-on-a-white-background",
+      "fileName": "2024_Black_PC_webwhite_8560058f-85e9-417d-88ee-db4a0cfb077f.webp",
+      "title": "Solid black rectangular pillow on a white background",
+      "description": "A plain black rectangular pillow with softly rounded corners, centered on a white studio background with no visible pattern or embellishment.",
+      "category": "Pillow",
+      "releaseYear": 2024,
+      "highlights": [
+        "Pillow"
+      ],
+      "image": {
+        "src": "/catalog/2024_Black_PC_webwhite_8560058f-85e9-417d-88ee-db4a0cfb077f.webp",
+        "alt": "Solid black rectangular pillow on a white background"
+      }
+    },
+    {
+      "id": "2024_Grey_tsw_webwhite",
+      "slug": "2024-light-gray-quilted-sleep-sack-with-short-sleeves",
+      "fileName": "2024_Grey_tsw_webwhite.webp",
+      "title": "Light gray quilted sleep sack with short sleeves",
+      "description": "A light gray sleep sack with short sleeves, diamond quilting, a rounded hem, and a full front zipper, photographed straight-on against white.",
+      "category": "Sleep Sack",
+      "releaseYear": 2024,
+      "highlights": [
+        "Quilted",
+        "Short sleeves",
+        "Front zipper"
+      ],
+      "image": {
+        "src": "/catalog/2024_Grey_tsw_webwhite.webp",
+        "alt": "Light gray quilted sleep sack with short sleeves"
+      }
+    },
+    {
+      "id": "2024_black_swnw_webwhite_01",
+      "slug": "2024-black-sleep-sack-with-open-swaddle-wings-and-front-zipper",
+      "fileName": "2024_black_swnw_webwhite_01.webp",
+      "title": "Black sleep sack with open swaddle wings and front zipper",
+      "description": "A black quilted sleep sack shown open to reveal wide wraparound swaddle wings across the chest, with a front zipper and rounded bottom edge.",
+      "category": "Sleep Sack",
+      "releaseYear": 2024,
+      "highlights": [
+        "Quilted",
+        "Front zipper",
+        "Swaddle wings"
+      ],
+      "image": {
+        "src": "/catalog/2024_black_swnw_webwhite_01.webp",
+        "alt": "Black sleep sack with open swaddle wings and front zipper"
+      }
+    },
+    {
+      "id": "2024_blue_ssnw_webwhite_01_b3f6a2d7-66b7-405f-8f66-d94e586ce280",
+      "slug": "2024-dusty-blue-sleeveless-quilted-sleep-sack",
+      "fileName": "2024_blue_ssnw_webwhite_01_b3f6a2d7-66b7-405f-8f66-d94e586ce280.webp",
+      "title": "Dusty blue sleeveless quilted sleep sack",
+      "description": "A sleeveless dusty blue sleep sack with subtle quilting, a centered zipper, and a rounded bottom, laid flat on a clean white background.",
+      "category": "Sleep Sack",
+      "releaseYear": 2024,
+      "highlights": [
+        "Quilted",
+        "Sleeveless",
+        "Front zipper"
+      ],
+      "image": {
+        "src": "/catalog/2024_blue_ssnw_webwhite_01_b3f6a2d7-66b7-405f-8f66-d94e586ce280.webp",
+        "alt": "Dusty blue sleeveless quilted sleep sack"
+      }
+    },
+    {
+      "id": "2024_bluedino_ssnw_webwhite_01",
+      "slug": "2024-sleeveless-sleep-sack-with-blue-and-lavender-dinosaur-print",
+      "fileName": "2024_bluedino_ssnw_webwhite_01.webp",
+      "title": "Sleeveless sleep sack with blue and lavender dinosaur print",
+      "description": "A white sleeveless sleep sack trimmed in blue and printed all over with blue, teal, and lavender dinosaurs, leaves, and small prehistoric details.",
+      "category": "Sleep Sack",
+      "releaseYear": 2024,
+      "highlights": [
+        "Sleeveless",
+        "Dinosaur print",
+        "Blue trim"
+      ],
+      "image": {
+        "src": "/catalog/2024_bluedino_ssnw_webwhite_01.webp",
+        "alt": "Sleeveless sleep sack with blue and lavender dinosaur print"
+      }
+    },
+    {
+      "id": "2024_blueheart_tpj_webwhite_01_15178948-74eb-4902-a254-1635f4598b45",
+      "slug": "2024-two-piece-pajama-set-with-oversized-blue-watercolor-hearts",
+      "fileName": "2024_blueheart_tpj_webwhite_01_15178948-74eb-4902-a254-1635f4598b45.webp",
+      "title": "Two-piece pajama set with oversized blue watercolor hearts",
+      "description": "A long-sleeve pajama set with a white top and leggings covered in large blue watercolor-style hearts, finished with blue neck, waist, cuff, and ankle trim.",
+      "category": "Pajama Set",
+      "releaseYear": 2024,
+      "highlights": [
+        "Long sleeves",
+        "Heart print"
+      ],
+      "image": {
+        "src": "/catalog/2024_blueheart_tpj_webwhite_01_15178948-74eb-4902-a254-1635f4598b45.webp",
+        "alt": "Two-piece pajama set with oversized blue watercolor hearts"
+      }
+    },
+    {
+      "id": "2024_buffalo_onesie_webwhite",
+      "slug": "2024-short-sleeve-baby-bodysuit-in-brown-buffalo-check",
+      "fileName": "2024_buffalo_onesie_webwhite.webp",
+      "title": "Short-sleeve baby bodysuit in brown buffalo check",
+      "description": "A short-sleeve infant bodysuit with lap shoulders and snap closure, printed in a bold brown and cream buffalo check pattern.",
+      "category": "Bodysuit",
+      "releaseYear": 2024,
+      "highlights": [
+        "Short sleeves"
+      ],
+      "image": {
+        "src": "/catalog/2024_buffalo_onesie_webwhite.webp",
+        "alt": "Short-sleeve baby bodysuit in brown buffalo check"
+      }
+    },
+    {
+      "id": "2024_checkerboard_swnw_webwhite",
+      "slug": "2024-sleeveless-sleep-sack-in-beige-geometric-checkerboard",
+      "fileName": "2024_checkerboard_swnw_webwhite.webp",
+      "title": "Sleeveless sleep sack in beige geometric checkerboard",
+      "description": "A sleeveless sleep sack in a soft beige and white geometric checkerboard print, with a vertical front zipper and rounded bottom silhouette.",
+      "category": "Sleep Sack",
+      "releaseYear": 2024,
+      "highlights": [
+        "Sleeveless",
+        "Front zipper",
+        "Checker print"
+      ],
+      "image": {
+        "src": "/catalog/2024_checkerboard_swnw_webwhite.webp",
+        "alt": "Sleeveless sleep sack in beige geometric checkerboard"
+      }
+    },
+    {
+      "id": "2024_coffeerainbow_pj_webwhite",
+      "slug": "2024-brown-zip-sleeper-with-cream-rainbow-print",
+      "fileName": "2024_coffeerainbow_pj_webwhite.webp",
+      "title": "Brown zip sleeper with cream rainbow print",
+      "description": "A long-sleeve one-piece sleeper in deep brown, patterned with repeating cream rainbows and finished with a diagonal zipper and light contrast cuffs.",
+      "category": "Zip Sleeper",
+      "releaseYear": 2024,
+      "highlights": [
+        "Long sleeves",
+        "Diagonal zipper",
+        "Rainbow print"
+      ],
+      "image": {
+        "src": "/catalog/2024_coffeerainbow_pj_webwhite.webp",
+        "alt": "Brown zip sleeper with cream rainbow print"
+      }
+    },
+    {
+      "id": "2024_coffeerainbow_ss-nw_webwhite",
+      "slug": "2024-brown-sleeveless-sleep-sack-with-cream-rainbow-print",
+      "fileName": "2024_coffeerainbow_ss-nw_webwhite.webp",
+      "title": "Brown sleeveless sleep sack with cream rainbow print",
+      "description": "A sleeveless brown sleep sack covered in repeating cream rainbow motifs, trimmed in light beige, with a front zipper and rounded hem.",
+      "category": "Sleep Sack",
+      "releaseYear": 2024,
+      "highlights": [
+        "Sleeveless",
+        "Front zipper",
+        "Rainbow print"
+      ],
+      "image": {
+        "src": "/catalog/2024_coffeerainbow_ss-nw_webwhite.webp",
+        "alt": "Brown sleeveless sleep sack with cream rainbow print"
+      }
+    },
+    {
+      "id": "2024_oat_wb_webwhite",
+      "slug": "2024-oat-quilted-baby-blanket-with-satin-trim",
+      "fileName": "2024_oat_wb_webwhite.webp",
+      "title": "Oat quilted baby blanket with satin trim",
+      "description": "A folded oat-colored baby blanket with diamond quilting and glossy beige satin edging, styled with one corner folded to show the front texture.",
+      "category": "Blanket",
+      "releaseYear": 2024,
+      "highlights": [
+        "Quilted",
+        "Satin trim"
+      ],
+      "image": {
+        "src": "/catalog/2024_oat_wb_webwhite.webp",
+        "alt": "Oat quilted baby blanket with satin trim"
+      }
+    },
+    {
+      "id": "2024_olive_TPJ_WebWhite_4483bf36-ae08-48ca-9082-d3b9c9b14ea5",
+      "slug": "2024-solid-olive-long-sleeve-two-piece-pajama-set",
+      "fileName": "2024_olive_TPJ_WebWhite_4483bf36-ae08-48ca-9082-d3b9c9b14ea5.webp",
+      "title": "Solid olive long-sleeve two-piece pajama set",
+      "description": "A plain olive green pajama set with a long-sleeve crewneck top and matching slim pants, both shown flat on a white background.",
+      "category": "Pajama Set",
+      "releaseYear": 2024,
+      "highlights": [
+        "Long sleeves"
+      ],
+      "image": {
+        "src": "/catalog/2024_olive_TPJ_WebWhite_4483bf36-ae08-48ca-9082-d3b9c9b14ea5.webp",
+        "alt": "Solid olive long-sleeve two-piece pajama set"
+      }
+    },
+    {
+      "id": "2024_olive_tpj-short_webwhite",
+      "slug": "2024-solid-olive-short-sleeve-pajama-set-with-shorts",
+      "fileName": "2024_olive_tpj-short_webwhite.webp",
+      "title": "Solid olive short-sleeve pajama set with shorts",
+      "description": "A plain olive green short pajama set featuring a crewneck tee and matching shorts, photographed as a clean product flat lay.",
+      "category": "Pajama Set",
+      "releaseYear": 2024,
+      "highlights": [
+        "Short sleeves"
+      ],
+      "image": {
+        "src": "/catalog/2024_olive_tpj-short_webwhite.webp",
+        "alt": "Solid olive short-sleeve pajama set with shorts"
+      }
+    },
+    {
+      "id": "2024_pinkbanana_toddlerblanket_webwhite",
+      "slug": "2024-toddler-blanket-with-yellow-bananas-and-pink-backing",
+      "fileName": "2024_pinkbanana_toddlerblanket_webwhite.webp",
+      "title": "Toddler blanket with yellow bananas and pink backing",
+      "description": "A folded toddler blanket with a pale pink front printed in bright yellow bananas and a solid bubblegum-pink underside turned up at one corner.",
+      "category": "Blanket",
+      "releaseYear": 2024,
+      "highlights": [
+        "Banana print"
+      ],
+      "image": {
+        "src": "/catalog/2024_pinkbanana_toddlerblanket_webwhite.webp",
+        "alt": "Toddler blanket with yellow bananas and pink backing"
+      }
+    },
+    {
+      "id": "2024_rust_tpj_webwhite_22e8499d-72a7-4040-b068-a722cd4ef646",
+      "slug": "2024-solid-rust-long-sleeve-two-piece-pajama-set",
+      "fileName": "2024_rust_tpj_webwhite_22e8499d-72a7-4040-b068-a722cd4ef646.webp",
+      "title": "Solid rust long-sleeve two-piece pajama set",
+      "description": "A simple rust-orange pajama set with a long-sleeve top and matching cuffed pants, arranged flat on a white studio background.",
+      "category": "Pajama Set",
+      "releaseYear": 2024,
+      "highlights": [
+        "Long sleeves"
+      ],
+      "image": {
+        "src": "/catalog/2024_rust_tpj_webwhite_22e8499d-72a7-4040-b068-a722cd4ef646.webp",
+        "alt": "Solid rust long-sleeve two-piece pajama set"
+      }
+    },
+    {
+      "id": "2024_rustcheck_lovey_webwhite",
+      "slug": "2024-rust-and-cream-checker-lovey-with-a-wooden-teether-ring",
+      "fileName": "2024_rustcheck_lovey_webwhite.webp",
+      "title": "Rust and cream checker lovey with a wooden teether ring",
+      "description": "A square lovey blanket in a rust and cream checker pattern, hung from a smooth wooden ring attached at one corner for teething or grasping.",
+      "category": "Blanket",
+      "releaseYear": 2024,
+      "highlights": [
+        "Wooden teether",
+        "Checker print"
+      ],
+      "image": {
+        "src": "/catalog/2024_rustcheck_lovey_webwhite.webp",
+        "alt": "Rust and cream checker lovey with a wooden teether ring"
+      }
+    },
+    {
+      "id": "2024_rustcheck_ssnw_webwhite_01",
+      "slug": "2024-rust-and-cream-checker-sleeveless-sleep-sack",
+      "fileName": "2024_rustcheck_ssnw_webwhite_01.webp",
+      "title": "Rust and cream checker sleeveless sleep sack",
+      "description": "A sleeveless sleep sack with a rust-orange and cream checker pattern, tonal trim, a centered zipper, and a softly rounded bottom.",
+      "category": "Sleep Sack",
+      "releaseYear": 2024,
+      "highlights": [
+        "Sleeveless",
+        "Front zipper",
+        "Checker print"
+      ],
+      "image": {
+        "src": "/catalog/2024_rustcheck_ssnw_webwhite_01.webp",
+        "alt": "Rust and cream checker sleeveless sleep sack"
+      }
+    },
+    {
+      "id": "2024_rustcheck_tpj-short_webwhite",
+      "slug": "2024-rust-and-cream-checker-short-sleeve-pajama-set",
+      "fileName": "2024_rustcheck_tpj-short_webwhite.webp",
+      "title": "Rust and cream checker short-sleeve pajama set",
+      "description": "A matching short pajama set with a rust and cream checker print, including a boxy short-sleeve top and coordinating shorts.",
+      "category": "Pajama Set",
+      "releaseYear": 2024,
+      "highlights": [
+        "Short sleeves",
+        "Checker print"
+      ],
+      "image": {
+        "src": "/catalog/2024_rustcheck_tpj-short_webwhite.webp",
+        "alt": "Rust and cream checker short-sleeve pajama set"
+      }
+    },
+    {
+      "id": "2026_firetruck_pj2_webwhite",
+      "slug": "2026-white-zip-sleeper-with-red-fire-trucks-and-hearts",
+      "fileName": "2026_firetruck_pj2_webwhite.webp",
+      "title": "White zip sleeper with red fire trucks and hearts",
+      "description": "A white long-sleeve zip sleeper covered in red fire trucks, hearts, and hydrants, with bright red trim at the zipper, cuffs, and ankles.",
+      "category": "Zip Sleeper",
+      "releaseYear": 2026,
+      "highlights": [
+        "Long sleeves",
+        "Firetruck print",
+        "Heart print"
+      ],
+      "image": {
+        "src": "/catalog/2026_firetruck_pj2_webwhite.webp",
+        "alt": "White zip sleeper with red fire trucks and hearts"
+      }
+    },
+    {
+      "id": "2026_floral_pj2_webwhite",
+      "slug": "2026-floral-zip-sleeper-with-lilac-trim",
+      "fileName": "2026_floral_pj2_webwhite.webp",
+      "title": "Floral zip sleeper with lilac trim",
+      "description": "A footless floral sleeper printed with pink, yellow, and purple flowers on a light background, finished with lilac trim and a diagonal zipper.",
+      "category": "Zip Sleeper",
+      "releaseYear": 2026,
+      "highlights": [
+        "Footless",
+        "Diagonal zipper",
+        "Floral print",
+        "Lilac trim"
+      ],
+      "image": {
+        "src": "/catalog/2026_floral_pj2_webwhite.webp",
+        "alt": "Floral zip sleeper with lilac trim"
+      }
+    }
+  ]
+}

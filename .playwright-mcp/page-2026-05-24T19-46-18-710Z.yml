@@ -1,0 +1,18 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e6]: Afterlight
+    - generic [ref=e7]:
+      - paragraph [ref=e8]: Early access · for creators
+      - heading "Get paid for brand campaigns without filming new content" [level=1] [ref=e9]
+      - paragraph [ref=e10]: Generate AI versions of yourself that sells branded products without you having to film.
+      - generic [ref=e11]:
+        - button "Join" [ref=e12] [cursor=pointer]:
+          - text: Join
+          - img [ref=e13]
+        - generic [ref=e15]:
+          - text: press
+          - generic [ref=e16]: Enter
+          - img [ref=e17]
+  - button "Open Next.js Dev Tools" [ref=e24] [cursor=pointer]:
+    - img [ref=e25]
+  - alert [ref=e28]

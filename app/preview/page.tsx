@@ -253,7 +253,7 @@ export default function LandingPage() {
       <footer className="border-t border-neutral-100 py-12 bg-white">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
            <span className="font-semibold text-sm tracking-tight text-neutral-900">Afterlight © 2026</span>
-           <p className="text-neutral-400 text-sm font-medium">Questions? <a href="mailto:your@email.com" className="text-black hover:underline transition-all">Get in touch</a></p>
+           <p className="text-neutral-400 text-sm font-medium">Questions? <a href="mailto:founders@tryafterlight.com" className="text-black hover:underline transition-all">Get in touch</a></p>
         </div>
       </footer>
 

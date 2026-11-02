@@ -1,0 +1,99 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e6]
+          - generic [ref=e8]: Afterlight
+        - generic [ref=e9]:
+          - link "Product" [ref=e10] [cursor=pointer]:
+            - /url: "#"
+          - link "Use Cases" [ref=e11] [cursor=pointer]:
+            - /url: "#"
+            - text: Use Cases
+            - img [ref=e12]
+          - link "Pricing" [ref=e14] [cursor=pointer]:
+            - /url: "#"
+          - link "Blog" [ref=e15] [cursor=pointer]:
+            - /url: "#"
+          - link "Resources" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+            - text: Resources
+            - img [ref=e17]
+        - link "Login" [ref=e20] [cursor=pointer]:
+          - /url: "#"
+          - text: Login
+          - img [ref=e21]
+    - main [ref=e23]:
+      - generic [ref=e24]:
+        - heading "Skip your next photoshoot." [level=1] [ref=e25]
+        - paragraph [ref=e26]: Generate product photos in your brand's style, instantly.
+        - generic [ref=e29]:
+          - textbox "Enter your email address" [ref=e30]
+          - button "Join Waitlist" [ref=e31]
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - generic [ref=e34]: Product photo
+            - img [ref=e35]
+            - generic [ref=e37]: Campaign shoot
+          - generic [ref=e38]:
+            - 'img "After: AI-generated lifestyle campaign photo" [ref=e39]'
+            - 'img "Before: product flat lay" [ref=e41]'
+            - generic:
+              - generic:
+                - img
+            - generic: Before
+            - generic: After
+          - paragraph [ref=e42]: ← Drag to reveal
+    - generic [ref=e44]:
+      - paragraph [ref=e45]: Pilots & Collaborators
+      - generic [ref=e46]:
+        - generic [ref=e47]: Balsam Hill
+        - generic [ref=e48]: GAP
+        - generic [ref=e49]: BEHR
+        - generic [ref=e50]: Million Dollar Baby
+        - generic [ref=e51]: Dreamland Baby
+        - generic [ref=e52]: Blindsgalore
+      - paragraph [ref=e53]: Plus State of Flux, Bobby London SF, Big Time Vintage, Axis Crew — and dozens of independent brands and studios shipping with Afterlight daily.
+    - contentinfo [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - heading "Experience photorealism" [level=2] [ref=e58]
+          - generic [ref=e59]:
+            - generic [ref=e60]:
+              - link "Download" [ref=e61] [cursor=pointer]:
+                - /url: "#"
+              - link "Product" [ref=e62] [cursor=pointer]:
+                - /url: "#"
+              - link "Docs" [ref=e63] [cursor=pointer]:
+                - /url: "#"
+              - link "Changelog" [ref=e64] [cursor=pointer]:
+                - /url: "#"
+              - link "Press" [ref=e65] [cursor=pointer]:
+                - /url: "#"
+              - link "Releases" [ref=e66] [cursor=pointer]:
+                - /url: "#"
+            - generic [ref=e67]:
+              - link "Blog" [ref=e68] [cursor=pointer]:
+                - /url: "#"
+              - link "Pricing" [ref=e69] [cursor=pointer]:
+                - /url: "#"
+              - link "Use Cases" [ref=e70] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e72]: Afterlight
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - img [ref=e75]
+            - generic [ref=e77]: Afterlight
+          - generic [ref=e78]:
+            - link "About" [ref=e79] [cursor=pointer]:
+              - /url: "#"
+            - link "Products" [ref=e80] [cursor=pointer]:
+              - /url: "#"
+            - link "Privacy" [ref=e81] [cursor=pointer]:
+              - /url: "#"
+            - link "Terms" [ref=e82] [cursor=pointer]:
+              - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e88] [cursor=pointer]:
+    - img [ref=e89]
+  - alert [ref=e92]

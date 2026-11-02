@@ -1,0 +1,47 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Afterlight" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e8]: Afterlight
+        - generic [ref=e9]:
+          - link "Use Cases" [ref=e10] [cursor=pointer]:
+            - /url: /use-cases
+          - link "Pricing" [ref=e11] [cursor=pointer]:
+            - /url: /pricing
+          - link "API" [ref=e12] [cursor=pointer]:
+            - /url: /api
+          - link "Login" [ref=e13] [cursor=pointer]:
+            - /url: /login
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - img [ref=e18]
+          - generic [ref=e20]: Afterlight
+        - generic [ref=e21]: ×
+        - generic [ref=e22]: Squarespace
+      - heading "Afterlight for Squarespace Commerce." [level=1] [ref=e23]
+      - paragraph [ref=e24]: Allow your users to turn iphone photos into product galleries directly inside the product editor.
+      - generic [ref=e25]:
+        - button "GENERATE 4 PHOTOS WITH AFTERLIGHT" [ref=e26]:
+          - img [ref=e27]
+          - text: GENERATE 4 PHOTOS WITH AFTERLIGHT
+        - paragraph [ref=e29]: Inside the product editor. One click.
+    - link "View API preview" [ref=e36] [cursor=pointer]:
+      - /url: /api
+      - text: View API preview
+      - img [ref=e37]
+    - generic [ref=e40]:
+      - generic [ref=e41]: © 2026 Afterlight, Inc.
+      - generic [ref=e42]:
+        - link "Use Cases" [ref=e43] [cursor=pointer]:
+          - /url: /use-cases
+        - link "Pricing" [ref=e44] [cursor=pointer]:
+          - /url: /pricing
+        - link "API" [ref=e45] [cursor=pointer]:
+          - /url: /api
+  - button "Open Next.js Dev Tools" [ref=e51] [cursor=pointer]:
+    - img [ref=e52]
+  - alert [ref=e55]

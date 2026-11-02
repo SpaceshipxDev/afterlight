@@ -1,0 +1,16 @@
+- generic [active]:
+  - main [ref=e1]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - heading "The real market" [level=1] [ref=e27]
+        - generic [ref=e28]:
+          - paragraph [ref=e29]: Product photography is a $10B industry. Ecommerce is $6.3T.
+          - paragraph [ref=e30]: Digital ad spend is $1T, and every ad is creative that could be personalized.
+          - paragraph [ref=e31]: Every screen you look at, made for you. Commerce is the beachhead.
+      - generic [ref=e33]:
+        - img "Generated Campaign Timeline" [ref=e35]
+        - img "Generated Campaign Timeline" [ref=e37]
+        - img "Generated Campaign Timeline" [ref=e39]
+  - button "Open Next.js Dev Tools" [ref=e20] [cursor=pointer]:
+    - img [ref=e21]
+  - alert [ref=e24]: You care more when it's you

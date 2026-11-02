@@ -1,0 +1,226 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img [ref=e6]
+          - text: Afterlight
+        - generic [ref=e8]:
+          - link "Engine" [ref=e9] [cursor=pointer]:
+            - /url: "#engine"
+          - link "Reel" [ref=e10] [cursor=pointer]:
+            - /url: "#reel"
+          - link "Voices" [ref=e11] [cursor=pointer]:
+            - /url: "#voices"
+          - link "Pricing" [ref=e12] [cursor=pointer]:
+            - /url: "#pricing"
+        - link "Request access" [ref=e13] [cursor=pointer]:
+          - /url: "#cta"
+          - text: Request access
+          - img [ref=e14]
+    - generic [ref=e16]:
+      - generic [ref=e21]:
+        - heading "Skip the photoshoot. Ship the campaign." [level=1] [ref=e22]:
+          - generic [ref=e24]:
+            - text: Skip the
+            - text: photoshoot.
+          - generic [ref=e27]: Ship the campaign.
+        - paragraph [ref=e28]: Afterlight is a generative studio for product and fashion brands. Direct a shoot in plain language. Ship editorial-grade frames in minutes.
+        - generic [ref=e29]:
+          - link "Request access" [ref=e30] [cursor=pointer]:
+            - /url: "#cta"
+            - text: Request access
+            - img [ref=e31]
+          - link "Watch the reel" [ref=e33] [cursor=pointer]:
+            - /url: "#reel"
+      - generic [ref=e34]: Scroll to enter the engine
+    - generic [ref=e37]:
+      - generic [ref=e38]: Dreamland //
+      - generic [ref=e39]: Mokibasa //
+      - generic [ref=e40]: Nix United //
+      - generic [ref=e41]: Behr //
+      - generic [ref=e42]: Blinds Galore //
+      - generic [ref=e43]: ChemImpex //
+      - generic [ref=e44]: Gap Labs //
+      - generic [ref=e45]: JR Atelier //
+      - generic [ref=e46]: Dreamland //
+      - generic [ref=e47]: Mokibasa //
+      - generic [ref=e48]: Nix United //
+      - generic [ref=e49]: Behr //
+      - generic [ref=e50]: Blinds Galore //
+      - generic [ref=e51]: ChemImpex //
+      - generic [ref=e52]: Gap Labs //
+      - generic [ref=e53]: JR Atelier //
+      - generic [ref=e54]: Dreamland //
+      - generic [ref=e55]: Mokibasa //
+      - generic [ref=e56]: Nix United //
+      - generic [ref=e57]: Behr //
+      - generic [ref=e58]: Blinds Galore //
+      - generic [ref=e59]: ChemImpex //
+      - generic [ref=e60]: Gap Labs //
+      - generic [ref=e61]: JR Atelier //
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - heading "One engine. Every surface of the brand." [level=2] [ref=e65]
+        - paragraph [ref=e66]: Swap lens, lighting, location, and styling without swapping a single person on the crew. Afterlight composes frames that match your house grade on the first try.
+      - generic [ref=e67]:
+        - article [ref=e68]:
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - text: Directed generation
+            - generic [ref=e74]:
+              - heading "Prompt the shot. Not the artist." [level=3] [ref=e75]:
+                - text: Prompt the shot.
+                - text: Not the artist.
+              - paragraph [ref=e76]: Describe the angle, the moment, the mood. Afterlight resolves a directable frame with your product sitting natively inside it.
+        - article [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - img [ref=e80]
+              - text: Throughput
+            - heading "Forty concepts before the kettle finishes boiling." [level=3] [ref=e82]
+        - article [ref=e83]:
+          - heading "Your exact grade — baked in, not applied after." [level=3] [ref=e86]
+        - article [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - img [ref=e91]
+              - generic [ref=e93]:
+                - heading "Reference-to-campaign in a single conversation." [level=3] [ref=e94]
+                - paragraph [ref=e95]: Drop a moodboard. Pin a palette. Lock a model reference. Every subsequent shot inherits the brief without restating it.
+            - link "Study the reel" [ref=e96] [cursor=pointer]:
+              - /url: "#reel"
+              - text: Study the reel
+              - img [ref=e97]
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: Campaign reel
+          - heading "Six looks. One house grade." [level=2] [ref=e103]
+        - generic [ref=e104]: Scroll horizontally
+      - generic [ref=e106]:
+        - figure "Frame 01 Performance / Court" [ref=e107]:
+          - generic [ref=e109]:
+            - generic [ref=e110]:
+              - generic [ref=e111]: Frame 01
+              - generic [ref=e112]: Performance / Court
+            - img [ref=e113]
+        - figure "Frame 02 Lifestyle / Urban" [ref=e115]:
+          - generic [ref=e117]:
+            - generic [ref=e118]:
+              - generic [ref=e119]: Frame 02
+              - generic [ref=e120]: Lifestyle / Urban
+            - img [ref=e121]
+        - figure "Frame 03 Editorial / Studio" [ref=e123]:
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]: Frame 03
+              - generic [ref=e128]: Editorial / Studio
+            - img [ref=e129]
+        - figure "Frame 04 Campaign / Motion" [ref=e131]:
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - generic [ref=e135]: Frame 04
+              - generic [ref=e136]: Campaign / Motion
+            - img [ref=e137]
+        - figure "Frame 05 Product / Soft Light" [ref=e139]:
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - generic [ref=e143]: Frame 05
+              - generic [ref=e144]: Product / Soft Light
+            - img [ref=e145]
+        - figure "Frame 06 Runway / Clean" [ref=e147]:
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e151]: Frame 06
+              - generic [ref=e152]: Runway / Clean
+            - img [ref=e153]
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - img [ref=e158]
+        - text: Philosophy
+      - paragraph [ref=e160]:
+        - generic [ref=e161]: Every
+        - generic [ref=e162]: frame
+        - generic [ref=e163]: you
+        - generic [ref=e164]: ship
+        - generic [ref=e165]: teaches
+        - generic [ref=e166]: the
+        - generic [ref=e167]: system
+        - generic [ref=e168]: your
+        - generic [ref=e169]: grade,
+        - generic [ref=e170]: your
+        - generic [ref=e171]: gesture,
+        - generic [ref=e172]: your
+        - generic [ref=e173]: grain.
+        - generic [ref=e174]: The
+        - generic [ref=e175]: more
+        - generic [ref=e176]: you
+        - generic [ref=e177]: generate,
+        - generic [ref=e178]: the
+        - generic [ref=e179]: more
+        - generic [ref=e180]: distinctly
+        - generic [ref=e181]: yours
+        - generic [ref=e182]: it
+        - generic [ref=e183]: looks.
+    - generic [ref=e185]:
+      - generic [ref=e186]:
+        - heading "The teams shipping at twice the cadence." [level=2] [ref=e187]
+        - paragraph [ref=e188]: Brand, commerce, and content leads who swapped the crew for the console.
+      - generic [ref=e189]:
+        - article [ref=e190]:
+          - paragraph [ref=e191]: “Replaced four shoot days with a single afternoon of prompts. The lookbook shipped before the budget review.”
+          - generic [ref=e194]:
+            - generic [ref=e195]: Amelia Ngata
+            - generic [ref=e196]: Creative Director, Kilnhouse
+        - article [ref=e197]:
+          - paragraph [ref=e198]: “Our drop cadence doubled. Nobody on the team can tell which frames were shot and which were generated.”
+          - generic [ref=e201]:
+            - generic [ref=e202]: Renata Okafor
+            - generic [ref=e203]: Head of Content, Orbital Goods
+        - article [ref=e204]:
+          - paragraph [ref=e205]: “We used to book talent three months out. Now we pitch six concepts in a morning and ship the winner same week.”
+          - generic [ref=e208]:
+            - generic [ref=e209]: Tobias Lind
+            - generic [ref=e210]: VP Brand, Northstream
+    - generic [ref=e214]:
+      - heading "Step onto the set without leaving your desk." [level=2] [ref=e215]
+      - paragraph [ref=e216]: We are onboarding a small group of brand and commerce teams each week. Request access and we will tune the engine to your house grade before your first session.
+      - generic [ref=e217]:
+        - textbox "work@yourbrand.com" [ref=e218]
+        - button "Request access" [ref=e219]
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - generic [ref=e223]:
+          - img [ref=e224]
+          - text: Afterlight
+        - generic [ref=e226]:
+          - link "Engine" [ref=e227] [cursor=pointer]:
+            - /url: "#"
+          - link "Reel" [ref=e228] [cursor=pointer]:
+            - /url: "#"
+          - link "Pricing" [ref=e229] [cursor=pointer]:
+            - /url: "#"
+          - link "Docs" [ref=e230] [cursor=pointer]:
+            - /url: "#"
+          - link "Changelog" [ref=e231] [cursor=pointer]:
+            - /url: "#"
+          - link "Press" [ref=e232] [cursor=pointer]:
+            - /url: "#"
+          - link "Careers" [ref=e233] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact" [ref=e234] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e235]: Afterlight
+      - generic [ref=e236]:
+        - generic [ref=e237]: © 2026 Afterlight Studio. All frames reserved.
+        - generic [ref=e238]:
+          - link "Privacy" [ref=e239] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms" [ref=e240] [cursor=pointer]:
+            - /url: "#"
+          - link "Security" [ref=e241] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e247] [cursor=pointer]:
+    - img [ref=e248]

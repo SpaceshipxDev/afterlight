@@ -1,0 +1,105 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Afterlight" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e8]: Afterlight
+        - link "Back" [ref=e9] [cursor=pointer]:
+          - /url: /
+          - img [ref=e10]
+          - text: Back
+    - generic [ref=e13]:
+      - generic [ref=e18]: Live Pilot
+      - img "Behr" [ref=e20]
+      - heading "Restyled without a reshoot." [level=1] [ref=e21]
+      - paragraph [ref=e22]: A four-week pilot turning existing Behr room photography into campaign-ready creative for new color drops — using the actual Behr palette, no studio time, no repaint.
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - paragraph [ref=e25]: Scope
+          - paragraph [ref=e26]: 3 rooms
+        - generic [ref=e27]:
+          - paragraph [ref=e28]: Output
+          - paragraph [ref=e29]: 3 final scenes
+        - generic [ref=e30]:
+          - paragraph [ref=e31]: Timeline
+          - paragraph [ref=e32]: 4-day sprint
+        - generic [ref=e33]:
+          - paragraph [ref=e34]: Status
+          - paragraph [ref=e35]: Active
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - generic [ref=e42]: "01"
+          - heading "Bitter Sage Dining Nook" [level=2] [ref=e43]
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - paragraph [ref=e46]: Before
+            - img "Bitter Sage Dining Nook — source" [ref=e48]
+          - generic [ref=e49]:
+            - paragraph [ref=e50]: After
+            - img "Bitter Sage Dining Nook — generated" [ref=e52]
+        - generic [ref=e53]:
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Cabinets
+            - paragraph [ref=e58]: Bitter Sage
+            - paragraph [ref=e59]: N390-4
+          - generic [ref=e62]:
+            - paragraph [ref=e63]: Walls
+            - paragraph [ref=e64]: Painter’s White
+            - paragraph [ref=e65]: PPU18-08
+      - generic [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: "02"
+          - heading "Admiral Blue Kitchen" [level=2] [ref=e69]
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: Before
+            - img "Admiral Blue Kitchen — source" [ref=e74]
+          - generic [ref=e75]:
+            - paragraph [ref=e76]: After
+            - img "Admiral Blue Kitchen — generated" [ref=e78]
+        - generic [ref=e79]:
+          - generic [ref=e82]:
+            - paragraph [ref=e83]: Lower cabinets
+            - paragraph [ref=e84]: Admiral Blue
+            - paragraph [ref=e85]: M520-7
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: Upper cabinets
+            - paragraph [ref=e90]: Cotton Knit
+            - paragraph [ref=e91]: PPU7-11
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]: "03"
+          - heading "Graphic Charcoal Kitchen" [level=2] [ref=e95]
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - paragraph [ref=e98]: Before
+            - img "Graphic Charcoal Kitchen — source" [ref=e100]
+          - generic [ref=e101]:
+            - paragraph [ref=e102]: After
+            - img "Graphic Charcoal Kitchen — generated" [ref=e104]
+        - generic [ref=e105]:
+          - generic [ref=e108]:
+            - paragraph [ref=e109]: Walls
+            - paragraph [ref=e110]: Silky White
+            - paragraph [ref=e111]: PPU7-12
+          - generic [ref=e114]:
+            - paragraph [ref=e115]: Lower cabinets
+            - paragraph [ref=e116]: Graphic Charcoal
+            - paragraph [ref=e117]: N500-6
+    - generic [ref=e119]:
+      - paragraph [ref=e120]: Run a pilot like this
+      - heading "Skip your next photoshoot." [level=2] [ref=e121]
+      - link "Get on the waitlist" [ref=e122] [cursor=pointer]:
+        - /url: /
+        - text: Get on the waitlist
+        - img [ref=e123]
+    - generic [ref=e126]:
+      - generic [ref=e127]: © 2026 Afterlight
+      - link "Afterlight" [ref=e128] [cursor=pointer]:
+        - /url: /
+  - button "Open Next.js Dev Tools" [ref=e134] [cursor=pointer]:
+    - img [ref=e135]
+  - alert [ref=e138]

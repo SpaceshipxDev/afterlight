@@ -1,0 +1,85 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - link "Afterlight" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img [ref=e6]
+          - generic [ref=e8]: Afterlight
+        - generic [ref=e9]:
+          - link "Use Cases" [ref=e10] [cursor=pointer]:
+            - /url: /use-cases
+          - link "Pricing" [ref=e11] [cursor=pointer]:
+            - /url: /pricing
+        - link "Login" [ref=e12] [cursor=pointer]:
+          - /url: /login
+          - text: Login
+          - img [ref=e13]
+    - main [ref=e15]:
+      - generic [ref=e16]:
+        - heading "Skip your next photoshoot." [level=1] [ref=e17]
+        - paragraph [ref=e18]: Generate product photos in your brand's style, instantly.
+        - generic [ref=e21]:
+          - textbox "Enter your email address" [ref=e22]
+          - button "Join Waitlist" [ref=e23]
+        - generic [ref=e24]:
+          - paragraph [ref=e25]: Trusted by
+          - generic [ref=e27]:
+            - img "Gap" [ref=e29]
+            - img "Behr" [ref=e31]
+            - img "Balsam Hill" [ref=e33]
+            - img "Dreamland Baby" [ref=e35]
+            - img "Blindsgalore" [ref=e37]
+    - generic [ref=e39]:
+      - paragraph [ref=e40]: Live Pilots
+      - heading "Active sprints with Gap and Behr." [level=2] [ref=e41]
+      - generic [ref=e42]:
+        - link "Gap Reshot in four days. 3 SKUs · 6 campaign frames · brand-true aesthetic View pilot" [ref=e43] [cursor=pointer]:
+          - /url: /demos/gap
+          - img "Gap" [ref=e45]
+          - heading "Reshot in four days." [level=3] [ref=e46]
+          - paragraph [ref=e47]: 3 SKUs · 6 campaign frames · brand-true aesthetic
+          - generic [ref=e48]:
+            - text: View pilot
+            - img [ref=e49]
+        - link "Behr Restyled without a reshoot. 3 room scenes · real Behr palette · zero studio time View pilot" [ref=e51] [cursor=pointer]:
+          - /url: /demos/behr
+          - img "Behr" [ref=e53]
+          - heading "Restyled without a reshoot." [level=3] [ref=e54]
+          - paragraph [ref=e55]: 3 room scenes · real Behr palette · zero studio time
+          - generic [ref=e56]:
+            - text: View pilot
+            - img [ref=e57]
+    - generic [ref=e60]:
+      - paragraph [ref=e61]: Try it
+      - heading "See it for yourself." [level=2] [ref=e62]
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - 'img "After: AI-generated lifestyle campaign photo" [ref=e65]'
+          - 'img "Before: product flat lay" [ref=e67]'
+          - generic:
+            - generic:
+              - img
+              - img
+          - generic: Before
+          - generic: After
+        - paragraph [ref=e68]: Drag to compare
+    - contentinfo [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e72]: Afterlight
+        - generic [ref=e73]:
+          - link "Afterlight" [ref=e74] [cursor=pointer]:
+            - /url: /
+            - img [ref=e75]
+            - generic [ref=e77]: Afterlight
+          - generic [ref=e78]:
+            - link "Use Cases" [ref=e79] [cursor=pointer]:
+              - /url: /use-cases
+            - link "Pricing" [ref=e80] [cursor=pointer]:
+              - /url: /pricing
+            - link "Login" [ref=e81] [cursor=pointer]:
+              - /url: /login
+          - paragraph [ref=e82]: © 2026 Afterlight, Inc.
+  - button "Open Next.js Dev Tools" [ref=e88] [cursor=pointer]:
+    - img [ref=e89]
+  - alert [ref=e92]
