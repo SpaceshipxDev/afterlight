@@ -204,10 +204,10 @@ export default function Home() {
 
         <div className="mx-auto max-w-[1100px] px-6 pb-24 pt-20 text-center sm:pb-28 sm:pt-28">
           <h1 className="mx-auto max-w-[860px] text-[44px] font-semibold leading-[1.04] tracking-[-0.035em] sm:text-[76px]">
-            Software for factories.
+            Software for your factory.
           </h1>
           <p className="mx-auto mt-6 max-w-[560px] text-[19px] leading-[1.5] text-[#a1a1a6] sm:text-[22px]">
-            Made from the spreadsheet a factory already runs on, and changed by asking.
+            Built from the spreadsheet you already run on. Change it by asking.
           </p>
 
           <div className="mt-20 sm:mt-24">
@@ -217,7 +217,7 @@ export default function Home() {
               101 workers. 12,867 scans.
             </div>
             <p className="mx-auto mt-4 max-w-[560px] text-[16px] leading-[1.55] text-[#86868b] sm:text-[17px]">
-              One dot for each person who scanned a part on a factory floor.
+              One dot for each worker who scanned a part.
             </p>
           </div>
         </div>
@@ -226,19 +226,19 @@ export default function Home() {
       <section className="mx-auto max-w-[1100px] px-6 py-24 sm:py-32">
         <div className="flex flex-col gap-20 sm:gap-28">
           <Beat
-            title="From their own sheet."
-            body="Each factory is set up from the production spreadsheet it already uses. Same columns, same steps."
+            title="Starts from your sheet."
+            body="We set it up from the production spreadsheet you already use. Same columns, same steps."
             visual={<ExcelToSystem />}
           />
           <Beat
             title="Scanned at every step."
-            body="Every drawing carries a QR code. Workers scan it with their phone as the part moves on."
+            body="Every drawing carries a QR code. Your workers scan it with their phone as the part moves on."
             visual={<PhoneScan />}
             flip
           />
           <Beat
             title="Changed by asking."
-            body="When a factory wants something different, they say so in their WeChat group, and it changes."
+            body="Want something different? Say it in your WeChat group, and it changes."
             visual={<AskChat />}
           />
         </div>
