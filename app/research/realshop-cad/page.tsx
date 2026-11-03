@@ -46,7 +46,7 @@ export default function RealShopCad() {
           Frontier models now report near-saturated scores on public text-to-CAD benchmarks. We ask a narrower
           question: given only the 2D manufacturing drawing of a real production part, can a model produce a 3D
           model a machine shop could cut? We introduce RealShop-CAD, 228 drawing-to-STEP tasks sampled from
-          anonymized production drawings from MES customers, graded against each part&apos;s own production 3D
+          licensed, anonymized production drawings from MES customers, graded against each part&apos;s own production 3D
           model at 0.1 mm. Claude Opus 5.5, which scores 96% on BenchCAD, produces a machinable model for 38% of
           parts, and 9% of complex parts. The tasks are drawn from a corpus of 130,205 paired production drawings
           and 3D models.
@@ -61,7 +61,7 @@ export default function RealShopCad() {
 
         <h2 className="mt-10 text-xl font-semibold">1. Dataset</h2>
         <p className="mt-3">
-          The corpus consists of anonymized production drawings from MES customers: machined parts drawn by
+          The corpus consists of licensed, anonymized production drawings from MES customers: machined parts drawn by
           working engineers between 2018 and 2026, each paired with the 3D model the part was manufactured from.
           Drawings are PDF or DWG with standard orthographic views, sections, tolerances, surface finish and
           material callouts. Title blocks and customer identifiers are removed.
