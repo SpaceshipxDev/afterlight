@@ -15,6 +15,8 @@ export const metadata: Metadata = {
 const results = [
   { model: "Claude Opus 5.5", n: "228", all: "38% (87/228)", simple: "63% (54/86)", medium: "30% (29/96)", complex: "9% (4/46)" },
   { model: "GPT-6.1 Sol (high)", n: "20", all: "25% (5/20)", simple: "—", medium: "—", complex: "0% (0/6)" },
+  { model: "Gemini 3.1 Pro", n: "2", all: "0% (0/2)", simple: "—", medium: "0% (0/1)", complex: "0% (0/1)" },
+  { model: "Claude Fable 5.1", n: "1", all: "0% (0/1)", simple: "—", medium: "0% (0/1)", complex: "—" },
 ];
 
 const housing = [
@@ -137,7 +139,7 @@ export default function RealShopCad() {
         <h2 className="mt-10 text-xl font-semibold">5. Limitations</h2>
         <ul className="mt-3 list-disc space-y-2 pl-5">
           <li>One attempt per part. Best-of-n would raise scores.</li>
-          <li>GPT-6.1 Sol was run on a 20-part subset; other models on a single case-study part.</li>
+          <li>GPT-6.1 Sol was run on a 20-part subset; Gemini 3.1 Pro on 2 parts and Claude Fable 5.1 on 1 part (case-study parts).</li>
           <li>
             Some production drawings leave free-form surfaces undimensioned and defer to the 3D model. This is
             normal practice in industry and is part of what the benchmark measures.
