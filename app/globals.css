@@ -155,22 +155,5 @@ body {
 .al-cn {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", var(--font-geist-sans), sans-serif;
 }
-.al-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 9999px;
-  background: #2c2c2e;
-  animation-name: al-scan;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-}
-@keyframes al-scan {
-  0% { background: #ffffff; box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.55); transform: scale(1.25); }
-  6% { box-shadow: 0 0 0 7px rgba(255, 255, 255, 0); }
-  22% { background: #48484a; transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
-  100% { background: #2c2c2e; transform: scale(1); }
-}
+.al-figure { font-variant-numeric: tabular-nums; }
 .al-now { box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.18); }
-@media (prefers-reduced-motion: reduce) {
-  .al-dot { animation: none; background: #8e8e93; }
-}

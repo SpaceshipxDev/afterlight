@@ -1,36 +1,9 @@
 // tryafterlight.com — industrial home (2026-11-01). Low key on purpose: no pitch copy.
-// Figures = verified Oct 30 pull, week to Oct 29: 101 workers at 7 factories scanned 12,867 times.
+// ORDER_UPDATES = every non-voided floor scan, all live factories, demos excluded. Pulled 2026-11-05:
+// HK db.json reports 27,372 + 越侬 Supabase worker_stage_events 132,639 + 品胜 Aliyun reports 4,935.
 
 const CONTACT = "mailto:harry@tryafterlight.com";
-const WORKERS = 101;
-
-// Deterministic pseudo-random so server and client render the same field.
-function rand(i: number, salt: number) {
-  const x = Math.sin(i * 12.9898 + salt * 78.233) * 43758.5453;
-  return x - Math.floor(x);
-}
-
-function ScanField() {
-  return (
-    <div
-      className="mx-auto flex max-w-[560px] flex-wrap justify-center gap-[13px] sm:gap-[15px]"
-      role="img"
-      aria-label={`${WORKERS} dots, one per worker who scanned last week`}
-    >
-      {Array.from({ length: WORKERS }, (_, i) => {
-        const duration = 5 + rand(i, 1) * 11; // 5–16 s between scans
-        const delay = -rand(i, 2) * duration; // start mid-cycle
-        return (
-          <span
-            key={i}
-            className="al-dot"
-            style={{ animationDuration: `${duration.toFixed(2)}s`, animationDelay: `${delay.toFixed(2)}s` }}
-          />
-        );
-      })}
-    </div>
-  );
-}
+const ORDER_UPDATES = "164,946";
 
 function Wordmark({ light }: { light?: boolean }) {
   return (
@@ -210,14 +183,12 @@ export default function Home() {
             Built from the spreadsheet you already run on. Change it by asking.
           </p>
 
-          <div className="mt-20 sm:mt-24">
-            <ScanField />
-            <div className="mt-12 text-[13px] font-medium uppercase tracking-[0.14em] text-[#6e6e73]">Last week</div>
-            <div className="mt-3 text-[34px] font-semibold leading-[1.1] tracking-[-0.03em] sm:text-[52px]">
-              101 workers. 12,867 scans.
+          <div className="mx-auto mt-24 max-w-[860px] border-t border-white/10 pt-16 sm:mt-32 sm:pt-20">
+            <div className="al-figure bg-gradient-to-b from-white to-[#8e8e93] bg-clip-text text-[72px] font-semibold leading-[1.1] tracking-[-0.05em] text-transparent sm:text-[148px]">
+              {ORDER_UPDATES}
             </div>
-            <p className="mx-auto mt-4 max-w-[560px] text-[16px] leading-[1.55] text-[#86868b] sm:text-[17px]">
-              One dot for each worker who scanned a part.
+            <p className="mt-6 text-balance text-[19px] leading-[1.5] text-[#a1a1a6] sm:text-[22px]">
+              order updates, scanned on the shop floor.
             </p>
           </div>
         </div>
