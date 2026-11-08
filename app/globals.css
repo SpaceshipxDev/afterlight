@@ -158,3 +158,9 @@ body {
   font-family: var(--al-sans), -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 .al-now { box-shadow: 0 0 0 3px rgba(255, 79, 0, 0.18); }
+.al-legal a { text-decoration: underline; text-decoration-color: #d4d4d4; text-underline-offset: 3px; }
+.al-legal a:hover { text-decoration-color: #0a0a0a; }
+.al-legal strong { color: #0a0a0a; font-weight: 500; }
+.al-legal ul { display: flex; flex-direction: column; gap: 0.5rem; }
+.al-legal ul > li { position: relative; padding-left: 1.1rem; }
+.al-legal ul > li::before { content: ""; position: absolute; left: 0; top: 0.75em; width: 6px; height: 1px; background: #a3a3a3; }

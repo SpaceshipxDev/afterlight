@@ -1,211 +1,173 @@
-import LegalPage, { type LegalSection } from '@/components/LegalPage';
+import { CONTACT, EMAIL, LegalDoc, type Section } from "@/components/Site";
 
 export const metadata = {
-  title: 'Privacy Policy — Afterlight',
-  description:
-    'How Afterlight collects, uses, and safeguards your information when you use tryafterlight.com and our AI product photography platform.',
+  title: "Privacy Policy — Afterlight",
+  description: "How Afterlight handles information on tryafterlight.com and in the Afterlight manufacturing execution system.",
 };
 
-const EFFECTIVE = 'August 3, 2026';
+const Mail = () => <a href={CONTACT}>{EMAIL}</a>;
 
-const sections: LegalSection[] = [
+const sections: Section[] = [
   {
-    id: 'introduction',
-    title: '1. Introduction',
-    body: (
-      <p>
-        Afterlight, Inc. (&ldquo;Afterlight,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or
-        &ldquo;our&rdquo;) provides an AI-powered platform that generates professional product
-        photography for e-commerce brands, marketing agencies, and retail companies. This Privacy
-        Policy explains how we collect, use, disclose, and safeguard your information when you
-        visit our website{' '}
-        <a href="https://tryafterlight.com">tryafterlight.com</a> (the &ldquo;Site&rdquo;) and use
-        our services.
-      </p>
-    ),
-  },
-  {
-    id: 'information-we-collect',
-    title: '2. Information we collect',
+    id: "scope",
+    title: "Scope",
     body: (
       <>
-        <p>We may collect the following types of information:</p>
-        <ul>
-          <li>
-            <strong>Personal information.</strong> Name, email address, billing address, payment
-            information, phone number, and company name when you register for an account or make a
-            purchase.
-          </li>
-          <li>
-            <strong>Product images and content.</strong> Product photos, brand assets, and visual
-            guidelines you upload to our platform for processing.
-          </li>
-          <li>
-            <strong>Usage data.</strong> Information about how you interact with our Site and
-            services, including pages visited, time spent, and features used.
-          </li>
-          <li>
-            <strong>Cookies and tracking technologies.</strong> We use cookies, pixels, and similar
-            technologies to enhance your experience and analyze Site traffic.
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    id: 'how-we-use',
-    title: '3. How we use your information',
-    body: (
-      <>
-        <p>We use your information to:</p>
-        <ul>
-          <li>Provide, operate, and maintain our AI-powered product photography platform</li>
-          <li>Process transactions and send related communications</li>
-          <li>Improve and personalize our services</li>
-          <li>Communicate with you about updates, promotions, and support</li>
-          <li>Enforce our terms and protect against fraud or abuse</li>
-          <li>Comply with legal obligations</li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    id: 'sharing',
-    title: '4. Data sharing and disclosure',
-    body: (
-      <>
-        <p>We may share your information with:</p>
-        <ul>
-          <li>Payment processors (e.g., Stripe) to process transactions</li>
-          <li>Cloud storage and hosting providers to store your data</li>
-          <li>Analytics providers to help us improve our services</li>
-          <li>Legal authorities when required by law or to protect our rights</li>
-        </ul>
-        <p className="callout">We do not sell your personal information to third parties.</p>
-      </>
-    ),
-  },
-  {
-    id: 'retention',
-    title: '5. Data retention',
-    body: (
-      <p>
-        We retain your personal information for as long as your account is active or as needed to
-        provide our services. We may retain certain data for longer periods to comply with legal
-        obligations, resolve disputes, and enforce agreements.
-      </p>
-    ),
-  },
-  {
-    id: 'rights',
-    title: '6. Your rights and choices',
-    body: (
-      <>
-        <p>Depending on your jurisdiction, you may have the right to:</p>
-        <ul>
-          <li>Access the personal information we hold about you</li>
-          <li>Correct inaccurate or incomplete information</li>
-          <li>Delete your personal information</li>
-          <li>Object to or restrict certain processing activities</li>
-          <li>Data portability</li>
-        </ul>
         <p>
-          To exercise these rights, contact us at{' '}
-          <a href="mailto:privacy@tryafterlight.com">privacy@tryafterlight.com</a>.
+          Afterlight, Inc. (&ldquo;Afterlight&rdquo;, &ldquo;we&rdquo;) makes manufacturing execution software for factories
+          (the &ldquo;Service&rdquo;). This policy covers tryafterlight.com and the Service.
+        </p>
+        <p>
+          For information a factory puts into the Service, the factory is the controller and Afterlight processes it on the
+          factory&rsquo;s behalf, under our agreement with that factory. If you work at a factory that uses Afterlight,
+          questions about your data go to your employer first; we will help them answer.
         </p>
       </>
     ),
   },
   {
-    id: 'cookies',
-    title: '7. Cookies',
+    id: "collect",
+    title: "Information we handle",
     body: (
-      <p>
-        We use essential cookies for Site functionality, analytics cookies to understand usage
-        patterns, and optional marketing cookies. You can manage cookie preferences through your
-        browser settings.
-      </p>
+      <ul>
+        <li>
+          <strong>Production data.</strong> Orders, parts, drawings, quantities, due dates, process steps, suppliers and
+          customers, as entered or imported by the factory.
+        </li>
+        <li>
+          <strong>Shop-floor records.</strong> Scans of order QR codes, with the worker, step, quantity and time.
+        </li>
+        <li>
+          <strong>Account information.</strong> Names, roles and phone numbers of the people a factory sets up as users.
+        </li>
+        <li>
+          <strong>Requests.</strong> Messages and files sent to the Afterlight assistant, including in WeChat groups where
+          the factory has added it. The assistant reads messages addressed to it and the context needed to act on them.
+        </li>
+        <li>
+          <strong>Technical data.</strong> Server logs such as IP address, device type and request times, kept for security
+          and troubleshooting.
+        </li>
+        <li>
+          <strong>Correspondence.</strong> What you send when you email us.
+        </li>
+      </ul>
     ),
   },
   {
-    id: 'children',
-    title: "8. Children's privacy",
-    body: (
-      <p>
-        Our services are not directed to individuals under the age of 13. We do not knowingly
-        collect personal information from children. If you believe a child has provided us with
-        personal data, please contact us immediately.
-      </p>
-    ),
-  },
-  {
-    id: 'security',
-    title: '9. Data security',
-    body: (
-      <p>
-        We implement industry-standard security measures including encryption (AES-256 at rest, TLS
-        1.2+ in transit), access controls, and regular security assessments to protect your data.
-      </p>
-    ),
-  },
-  {
-    id: 'transfers',
-    title: '10. International data transfers',
-    body: (
-      <p>
-        Your information may be processed in the United States or other countries where our service
-        providers operate. We ensure appropriate safeguards are in place for international data
-        transfers.
-      </p>
-    ),
-  },
-  {
-    id: 'changes',
-    title: '11. Changes to this policy',
-    body: (
-      <p>
-        We may update this Privacy Policy from time to time. We will notify you of material changes
-        by posting the updated policy on our Site with a revised effective date.
-      </p>
-    ),
-  },
-  {
-    id: 'contact',
-    title: '12. Contact us',
+    id: "use",
+    title: "How we use it",
     body: (
       <>
-        <p>For questions or concerns about this Privacy Policy, please contact us at:</p>
+        <ul>
+          <li>To run the Service for the factory, including making the changes the factory asks for.</li>
+          <li>To support, secure and fix the Service.</li>
+          <li>To meet legal obligations.</li>
+        </ul>
         <p>
-          Afterlight, Inc.
-          <br />
-          <a href="mailto:privacy@tryafterlight.com">privacy@tryafterlight.com</a>
+          We use a factory&rsquo;s data to develop or improve models only where that factory has agreed to it in writing. We
+          do not sell personal information and do not use it for advertising.
         </p>
       </>
+    ),
+  },
+  {
+    id: "sharing",
+    title: "Service providers",
+    body: (
+      <>
+        <p>We share information only with providers that help us run the Service, under contracts that limit their use of it:</p>
+        <ul>
+          <li>Cloud hosting and storage.</li>
+          <li>AI model providers, which process requests sent to the assistant. They may not train on this data.</li>
+          <li>Email and messaging services used to deliver notifications.</li>
+        </ul>
+        <p>We disclose information to authorities only when the law requires it.</p>
+      </>
+    ),
+  },
+  {
+    id: "location",
+    title: "Where data is stored",
+    body: (
+      <p>
+        The Service runs on cloud infrastructure in Hong Kong, mainland China and the United States. Where a factory&rsquo;s
+        data is hosted is set out in its agreement. Transfers between regions follow applicable law, including the PRC
+        Personal Information Protection Law where it applies.
+      </p>
+    ),
+  },
+  {
+    id: "security",
+    title: "Security",
+    body: (
+      <ul>
+        <li>Each factory runs on its own application instance and database. No factory can see another&rsquo;s data.</li>
+        <li>All traffic is encrypted in transit with TLS.</li>
+        <li>Production access is limited to Afterlight staff who need it to run and support the Service.</li>
+      </ul>
+    ),
+  },
+  {
+    id: "retention",
+    title: "Retention and deletion",
+    body: (
+      <p>
+        We keep a factory&rsquo;s data for as long as it uses the Service. When the agreement ends, the factory can ask for a
+        full export, and we delete its data within 30 days of that request, except where the law requires us to keep it.
+        Server logs are kept only as long as needed for security and troubleshooting.
+      </p>
+    ),
+  },
+  {
+    id: "rights",
+    title: "Your rights",
+    body: (
+      <p>
+        Depending on where you are, you may have the right to access, correct, delete or export your personal information,
+        or to object to how it is used. Email <Mail />. If the request concerns data a factory controls, we will pass it
+        to that factory and help it respond.
+      </p>
+    ),
+  },
+  {
+    id: "cookies",
+    title: "Cookies",
+    body: (
+      <p>
+        tryafterlight.com uses no advertising or tracking cookies. The Service uses essential cookies only, to keep you
+        signed in.
+      </p>
+    ),
+  },
+  {
+    id: "children",
+    title: "Children",
+    body: <p>The Service is for businesses. We do not knowingly collect information from anyone under 16.</p>,
+  },
+  {
+    id: "changes",
+    title: "Changes",
+    body: (
+      <p>
+        We will post any change here with a new effective date. For material changes, we will tell the factories we work
+        with before the change takes effect.
+      </p>
+    ),
+  },
+  {
+    id: "contact",
+    title: "Contact",
+    body: (
+      <p>
+        Afterlight, Inc.
+        <br />
+        <Mail />
+      </p>
     ),
   },
 ];
 
 export default function PrivacyPage() {
-  return (
-    <LegalPage
-      kicker="Legal"
-      current="/privacy"
-      title="Privacy Policy"
-      effective={EFFECTIVE}
-      lede={
-        <p>
-          Afterlight generates professional product photography for e-commerce brands, agencies, and
-          retailers. This policy explains what we collect, how we use it, and the rights you keep.
-        </p>
-      }
-      sections={sections}
-      disclaimer={
-        <>
-          This document is provided for informational purposes only and does not constitute legal
-          advice. You should consult with a licensed attorney to ensure compliance with applicable
-          laws.
-        </>
-      }
-    />
-  );
+  return <LegalDoc title="Privacy Policy" effective="November 7, 2026" sections={sections} />;
 }

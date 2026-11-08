@@ -1,185 +1,189 @@
-import LegalPage, { type LegalSection } from '@/components/LegalPage';
+import Link from "next/link";
+import { CONTACT, EMAIL, LegalDoc, type Section } from "@/components/Site";
 
 export const metadata = {
-  title: 'Brand Services Agreement — Afterlight',
-  description:
-    'The agreement between Afterlight and the brands using its AI-powered product photography platform.',
+  title: "Terms of Service — Afterlight",
+  description: "Terms for using the Afterlight manufacturing execution system.",
 };
 
-const EFFECTIVE = 'August 3, 2026';
-
-const sections: LegalSection[] = [
+const sections: Section[] = [
   {
-    id: 'services',
-    title: '1. Services',
+    id: "agreement",
+    title: "Agreement",
+    body: (
+      <>
+        <p>
+          These terms govern use of the Afterlight manufacturing execution system and related services (the
+          &ldquo;Service&rdquo;) provided by Afterlight, Inc. (&ldquo;Afterlight&rdquo;, &ldquo;we&rdquo;) to a business
+          (the &ldquo;Customer&rdquo;).
+        </p>
+        <p>
+          Where the Customer has signed an agreement or order form with us, that document governs and these terms fill in
+          anything it does not cover. Where they conflict, the signed document prevails.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "service",
+    title: "The Service",
     body: (
       <p>
-        Afterlight will provide the Brand with AI-generated product photography services through its
-        platform. The scope of services includes automated product image generation that adapts to
-        the Brand&rsquo;s visual guidelines.
+        We set up the Service from the Customer&rsquo;s existing production records, host it, and keep it running. The
+        scope, setup and service levels for each Customer are set out in its order form.
       </p>
     ),
   },
   {
-    id: 'payment',
-    title: '2. Payment terms',
-    body: (
-      <ol className="alpha">
-        <li>The Brand agrees to pay fees as set forth in the applicable pricing plan or order form.</li>
-        <li>Payment is due in accordance with the terms specified at the time of purchase.</li>
-        <li>Late payments may incur additional fees.</li>
-      </ol>
-    ),
-  },
-  {
-    id: 'ip',
-    title: '3. Intellectual property rights',
-    body: (
-      <ol className="alpha">
-        <li>
-          <strong>Brand content.</strong> The Brand retains all ownership rights to product images,
-          logos, and brand assets uploaded to the platform.
-        </li>
-        <li>
-          <strong>Generated images.</strong> The Brand owns the rights to AI-generated images
-          produced for their account during the term of this Agreement.
-        </li>
-        <li>
-          <strong>Afterlight technology.</strong> Afterlight retains all rights to its underlying AI
-          models, algorithms, software, and platform technology.
-        </li>
-      </ol>
-    ),
-  },
-  {
-    id: 'data',
-    title: '4. Data usage and confidentiality',
-    body: (
-      <ol className="alpha">
-        <li>
-          Afterlight may use the Brand&rsquo;s uploaded product images to train and improve AI models
-          solely for the Brand&rsquo;s account.
-        </li>
-        <li>
-          Afterlight will not share the Brand&rsquo;s confidential information with third parties
-          except as necessary to provide services.
-        </li>
-        <li>
-          Brand product images will not be used to train general AI models accessible to other
-          customers without the Brand&rsquo;s explicit consent.
-        </li>
-      </ol>
-    ),
-  },
-  {
-    id: 'warranties',
-    title: '5. Representations and warranties',
-    body: (
-      <ol className="alpha">
-        <li>
-          The Brand represents that it has the right to use all images and content uploaded to the
-          platform.
-        </li>
-        <li>
-          Afterlight warrants that services will be provided in a professional manner consistent
-          with industry standards.
-        </li>
-      </ol>
-    ),
-  },
-  {
-    id: 'liability',
-    title: '6. Limitation of liability',
-    body: (
-      <ol className="alpha">
-        <li>
-          Afterlight&rsquo;s aggregate liability under this Agreement shall not exceed the fees paid
-          by the Brand in the twelve (12) months preceding the claim.
-        </li>
-        <li>Neither party shall be liable for indirect, incidental, or consequential damages.</li>
-      </ol>
-    ),
-  },
-  {
-    id: 'indemnification',
-    title: '7. Indemnification',
+    id: "changes-by-request",
+    title: "Changes made on request",
     body: (
       <p>
-        The Brand agrees to indemnify Afterlight against claims arising from the Brand&rsquo;s use of
-        the platform in violation of this Agreement or applicable law.
+        Authorized users can ask for changes to the Service, including through the Afterlight assistant. Changes go
+        live in the Customer&rsquo;s Service. The Customer should check that each change works as intended
+        and tell us promptly if it does not; we will correct or roll it back.
       </p>
     ),
   },
   {
-    id: 'term',
-    title: '8. Term and termination',
-    body: (
-      <ol className="alpha">
-        <li>
-          This Agreement remains in effect for the term specified in the applicable order or until
-          terminated.
-        </li>
-        <li>
-          Either party may terminate for material breach not cured within 30 days of written notice.
-        </li>
-        <li>Upon termination, the Brand may request a copy of generated images within 30 days.</li>
-      </ol>
-    ),
-  },
-  {
-    id: 'non-exclusivity',
-    title: '9. Non-exclusivity',
+    id: "accounts",
+    title: "Accounts and users",
     body: (
       <p>
-        This Agreement is non-exclusive. Both parties remain free to work with other clients or
-        service providers.
+        The Customer decides who uses the Service and is responsible for their use of it, for keeping passwords and
+        devices secure, and for giving its staff any notices the law requires about the data recorded about them.
       </p>
     ),
   },
   {
-    id: 'disputes',
-    title: '10. Dispute resolution',
+    id: "use",
+    title: "Acceptable use",
+    body: (
+      <>
+        <p>The Customer will not, and will not let others:</p>
+        <ul>
+          <li>Use the Service in breach of law or of others&rsquo; rights.</li>
+          <li>Try to access other customers&rsquo; data or break the Service&rsquo;s security.</li>
+          <li>Resell the Service or use it to build a competing product.</li>
+          <li>Overload the Service or disrupt it for others.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    id: "data",
+    title: "Customer data",
+    body: (
+      <>
+        <p>
+          The Customer owns its data. We use it only to provide, support and secure the Service, as described in our{" "}
+          <Link href="/privacy">Privacy Policy</Link>, and for other purposes only where the Customer has agreed in
+          writing.
+        </p>
+        <p>
+          The Customer can ask for a full export of its data at any time. After the agreement ends, we delete it within 30
+          days of the Customer&rsquo;s request, except where the law requires us to keep it.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: "fees",
+    title: "Fees",
     body: (
       <p>
-        Any disputes arising under this Agreement shall be resolved through good-faith negotiations.
-        If unresolved, disputes shall be submitted to binding arbitration in accordance with
-        American Arbitration Association rules.
+        Fees, payment terms and renewal are set out in the order form. If fees remain unpaid after notice, we may limit the
+        Service to read-only access until payment is made. Customer data is not deleted for late payment.
       </p>
     ),
   },
   {
-    id: 'governing-law',
-    title: '11. Governing law',
+    id: "confidentiality",
+    title: "Confidentiality",
     body: (
       <p>
-        This Agreement shall be governed by the laws of the State of Delaware, United States.
+        Each party will protect the other&rsquo;s non-public information with at least reasonable care and use it only for
+        the purposes of the agreement. Drawings, prices, customer lists and production data are the Customer&rsquo;s
+        confidential information.
+      </p>
+    ),
+  },
+  {
+    id: "ip",
+    title: "Intellectual property",
+    body: (
+      <p>
+        Afterlight owns the Service and its software, including changes made for the Customer. The Customer receives the
+        right to use the Service for its own operations for the term of the agreement.
+      </p>
+    ),
+  },
+  {
+    id: "warranty",
+    title: "Warranties",
+    body: (
+      <p>
+        We will provide the Service with reasonable skill and care. Except as stated in the agreement, the Service is
+        provided &ldquo;as is&rdquo;, and we make no other warranties, express or implied, including of merchantability or
+        fitness for a particular purpose. Production, quality and delivery decisions remain the Customer&rsquo;s.
+      </p>
+    ),
+  },
+  {
+    id: "liability",
+    title: "Limitation of liability",
+    body: (
+      <p>
+        Neither party is liable for indirect or consequential losses, or for lost profits, revenue or data, even if advised
+        of the possibility. Each party&rsquo;s total liability is limited to the fees paid by the Customer in the 12 months
+        before the claim. These limits do not apply to breach of confidentiality, the Customer&rsquo;s payment obligations,
+        or liability that cannot be limited by law.
+      </p>
+    ),
+  },
+  {
+    id: "term",
+    title: "Term and termination",
+    body: (
+      <p>
+        The agreement runs for the term in the order form. Either party may end it on written notice if the other
+        materially breaches it and does not fix the breach within 30 days.
+      </p>
+    ),
+  },
+  {
+    id: "law",
+    title: "Governing law",
+    body: (
+      <p>
+        These terms are governed by the laws of the State of Delaware, United States, unless the order form says
+        otherwise. The parties will first try to settle any dispute in good faith.
+      </p>
+    ),
+  },
+  {
+    id: "updates",
+    title: "Changes to these terms",
+    body: (
+      <p>
+        We may update these terms and will post the new version here with a new effective date. Changes do not affect a
+        signed agreement during its current term.
+      </p>
+    ),
+  },
+  {
+    id: "contact",
+    title: "Contact",
+    body: (
+      <p>
+        Afterlight, Inc.
+        <br />
+        <a href={CONTACT}>{EMAIL}</a>
       </p>
     ),
   },
 ];
 
 export default function TermsPage() {
-  return (
-    <LegalPage
-      kicker="Legal"
-      current="/terms"
-      title="Brand Services Agreement"
-      effective={EFFECTIVE}
-      lede={
-        <p>
-          This Agreement is entered into between Afterlight, Inc. (&ldquo;Afterlight&rdquo;), an
-          AI-powered product photography platform, and the client brand (&ldquo;Brand&rdquo;) using
-          Afterlight&rsquo;s services.
-        </p>
-      }
-      sections={sections}
-      disclaimer={
-        <>
-          This document is provided for informational purposes only and does not constitute legal
-          advice. You should consult with a licensed attorney to ensure this agreement meets your
-          specific needs.
-        </>
-      }
-    />
-  );
+  return <LegalDoc title="Terms of Service" effective="November 7, 2026" sections={sections} />;
 }
