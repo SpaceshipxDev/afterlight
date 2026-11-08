@@ -149,11 +149,12 @@ body {
 
 /* ---------- industrial home (Home.tsx) ---------- */
 .al-home {
-  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", sans-serif;
+  font-family: var(--al-sans), -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "cv11";
 }
+.al-mono { font-family: var(--al-mono), ui-monospace, "SF Mono", Menlo, monospace; }
 .al-cn {
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", var(--font-geist-sans), sans-serif;
+  font-family: var(--al-sans), -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
-.al-figure { font-variant-numeric: tabular-nums; }
-.al-now { box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.18); }
+.al-now { box-shadow: 0 0 0 3px rgba(255, 79, 0, 0.18); }
