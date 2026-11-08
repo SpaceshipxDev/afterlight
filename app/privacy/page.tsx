@@ -65,8 +65,9 @@ const sections: Section[] = [
           <li>To meet legal obligations.</li>
         </ul>
         <p>
-          We use a factory&rsquo;s data to develop or improve models only where that factory has agreed to it in writing. We
-          do not sell personal information and do not use it for advertising.
+          A factory&rsquo;s data is used for AI training only under our Licensed Data Training Program, by separate
+          written agreement. To take part, contact us at <Mail />. We do not sell personal information and do not use it
+          for advertising.
         </p>
       </>
     ),
@@ -91,9 +92,8 @@ const sections: Section[] = [
     title: "Where data is stored",
     body: (
       <p>
-        The Service runs on cloud infrastructure in Hong Kong, mainland China and the United States. Where a factory&rsquo;s
-        data is hosted is set out in its agreement. Transfers between regions follow applicable law, including the PRC
-        Personal Information Protection Law where it applies.
+        The Service runs on cloud infrastructure in the United States and Asia. Where a factory&rsquo;s data is hosted is
+        set out in its agreement. Transfers between regions follow applicable data protection law.
       </p>
     ),
   },

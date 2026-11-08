@@ -12,12 +12,13 @@ const CONTROLS = [
   ["Access", "Production access is limited to Afterlight staff who need it to run and support the system."],
   ["Change control", "Every change is versioned in source control and can be rolled back."],
   ["AI processing", "Requests to the assistant go to model providers that do not train on your data."],
-  ["Hosting", "Hong Kong, mainland China or the United States, as set in your agreement."],
+  ["Hosting", "The United States and Asia, as set in your agreement."],
 ];
 
 const DATA = [
   ["Ownership", "Your production data belongs to you."],
-  ["Use", "Used only to run, support and secure your system. Anything else needs your written agreement."],
+  ["Use", "Used only to run, support and secure your system."],
+  ["AI training", "Only under our Licensed Data Training Program, by separate written agreement. Contact us to take part."],
   ["Export", "Full export of your data at any time, on request."],
   ["Deletion", "Deleted within 30 days of your request after the agreement ends."],
 ];

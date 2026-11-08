@@ -21,7 +21,7 @@ const DEPLOY = [
   ["Setup", "From your existing spreadsheet and routing. Nothing to install."],
   ["Devices", "Any phone with a camera. Any browser. Any TV."],
   ["Languages", "English, Chinese."],
-  ["Hosting", "Hong Kong, mainland China or the United States."],
+  ["Hosting", "The United States and Asia."],
 ];
 
 export default function ProductPage() {

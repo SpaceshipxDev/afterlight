@@ -81,6 +81,10 @@ const sections: Section[] = [
           writing.
         </p>
         <p>
+          Customer data is used for AI training only under our Licensed Data Training Program, by separate written
+          agreement. To take part, contact us at <a href={CONTACT}>{EMAIL}</a>.
+        </p>
+        <p>
           The Customer can ask for a full export of its data at any time. After the agreement ends, we delete it within 30
           days of the Customer&rsquo;s request, except where the law requires us to keep it.
         </p>
